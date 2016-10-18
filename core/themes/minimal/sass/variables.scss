@@ -1,0 +1,15 @@
+/*Familia Fuentes*/
+$letra-minimal: 'Raleway', 'Verdana', sans-serif;
+/*tamaños fuentes*/
+
+/*colores*/
+$negro: #333;
+$gris-claro: #f5f5f5;
+$gris-clarito: #ececec;
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
