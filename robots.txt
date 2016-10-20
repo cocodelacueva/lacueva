@@ -12,3 +12,5 @@ Disallow: /page/
 Disallow: /comments/
 Disallow: /xmlrpc.php
 Disallow: /*?s=
+
+Disallow: /demo/

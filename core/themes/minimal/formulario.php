@@ -40,7 +40,7 @@ if($email==''){
     <meta charset="utf-8">
 <title>LaCueva.tv-Formulario</title>
 
-<!-- Google Analytics  
+<!-- Google Analytics -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -51,7 +51,7 @@ if($email==''){
   ga('require', 'displayfeatures');
   ga('send', 'pageview');
 
-</script>-->
+</script>
 
     <script type="text/javascript">
             function redireccionar(){
