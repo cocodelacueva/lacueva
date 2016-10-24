@@ -92,8 +92,11 @@ jQuery(document).ready(function( $ ){
     var loadMoreButton  = $( '.btn-mastrabajos' );
     var postsGrid       = $( '.trabajos-items' );
     var currentPage     = 1;
-    
+    var loaderAjax = $( '.img-loader-ajax' );
+
     loadMoreButton.click( function () {
+        loaderAjax.css( 'display', 'block' );
+
         $.ajax( {
             type: 'POST',
             url: window.MinimalScriptsData.ajaxurl,
@@ -102,11 +105,13 @@ jQuery(document).ready(function( $ ){
                 page: currentPage + 1
             },
             success: function( response ) {
+                loaderAjax.css( 'display', 'none' );
                 if ( response ) {
                     currentPage++;
                     postsGrid.append( response );
                 } else {
                     loadMoreButton.remove();
+                    $( '#trabajos' ).append ( 'no hay más trabajos' );
                 }
             }
         } );

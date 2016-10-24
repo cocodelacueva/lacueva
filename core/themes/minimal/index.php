@@ -34,6 +34,7 @@ get_header();
         </section>
 
 		<footer class="content-footer">
+		<img class="img-loader-ajax" src="<?php bloginfo('stylesheet_directory') ?>/images/loader.gif" alt="cargando">
             <button class="btn-mastrabajos">Cargar más</button>
         </footer>
 
