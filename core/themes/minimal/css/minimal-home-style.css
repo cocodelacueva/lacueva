@@ -323,12 +323,15 @@ form {
   overflow: auto;
   background-color: #000;
   color: #fff;
-  padding: 0% 10%;
+  padding: 1% 10%;
   width: 100%;
   box-shadow: 1px 1px 5px #333; }
   @media (max-width: 1400px) {
     .main-footer {
-      padding: 0% 5%; } }
+      padding: 2% 5%; } }
+  @media (max-width: 960px) {
+    .main-footer {
+      padding: 3% 5%; } }
   .main-footer h5 {
     float: left;
     margin: 2% 0;

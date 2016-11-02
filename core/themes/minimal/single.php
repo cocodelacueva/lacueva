@@ -3,7 +3,7 @@
  *
  * @package minimal
  */
-get_header(); 
+get_header();
 ?>
 <!---- sitio ---->
 <div class="wrapper">
@@ -23,26 +23,11 @@ get_header();
 				comments_template();
 			endif;
 
-		endwhile; ?>
+		endwhile;
+		?>
 
-		
     </main><!-- //cierra main section -->
-    
-    <!---- section: contact form ---->
-    <section id="form" class="complete-form">
-        <h2>Contacto</h2>
-        <form id="contact" method="post" action="formulario-short.php">
-            <input type="text" name="email" required placeholder="correo electrónico">
-            <input type="text" name="tel" placeholder="teléfono">
-            <textarea name="consulta" placeholder="mensaje"></textarea>
-            <button type="submit"><span class="red-icon red-icon-contacto"></span> enviar</button>
-            <div class="close-form">
-                  <span class="cruz-l"></span>
-                  <span class="cruz-lr"></span>
-            </div> 
-        </form>
-    </section><!-- //cierra contact form -->
-    
+
 </div>  <!-- //cierra wrapper -->
 
 <?php

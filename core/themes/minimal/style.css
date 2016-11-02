@@ -6,7 +6,7 @@ Description: A minimalistic WordPress theme for LaCueva.tv.
 Version: 1.0
 Author: LaCueva.tv
 Author URI: http://lacueva.tv/
-Tags: Licensed under GPL. 
+Tags: Licensed under GPL.
 */
 /*Lacueva.tv - style*/
 html, body, div, span, applet, object, iframe,
@@ -369,7 +369,7 @@ nav {
   overflow: auto;
   background-color: #000;
   color: #fff;
-  padding: 0% 10%;
+  padding: 1% 10%;
   width: 100%;
   box-shadow: 1px 1px 5px #333; }
   @media (max-width: 1400px) {
@@ -796,6 +796,9 @@ otras páginas
   font-size: 70%;
   line-height: 100%;
   text-align: right; }
+  @media (max-width: 768px) {
+    .content-footer-single {
+      font-size: 100%; } }
 
 .btn-online {
   padding: 10px;
@@ -808,36 +811,97 @@ otras páginas
   display: inline-block; }
   .btn-online:hover {
     color: #999; }
+  @media (max-width: 768px) {
+    .btn-online {
+      font-size: 120%;
+      width: 50%;
+      text-align: center; } }
+
+.entri-titulo {
+  margin-top: 20px;
+  font-size: 24px;
+  display: inline-block;
+  border-bottom: 1px solid #333;
+  padding-bottom: 5px; }
+
+.entri-tags {
+  text-transform: uppercase;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-style: italic; }
+
+.entri-text {
+  width: 50%;
+  float: left; }
+  @media (max-width: 768px) {
+    .entri-text {
+      float: none;
+      width: 100%; } }
+
+.entri-text p {
+  font-size: 18px;
+  line-height: 24px;
+  padding: 20px 10px; }
+
+.entri-figure {
+  width: 50%;
+  float: left;
+  margin-top: -50px; }
+  @media (max-width: 768px) {
+    .entri-figure {
+      float: none;
+      width: 100%;
+      margin-top: 20px; } }
+
+.entri-img {
+  width: 100%;
+  height: auto; }
+  @media (max-width: 768px) {
+    .entri-img {
+      width: 80%;
+      display: block;
+      margin: 0 auto; } }
 
 .post-navigation {
   display: block;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
   padding: 50px 0;
   overflow: auto; }
   .post-navigation h2 {
     font-size: 150%;
-    margin: 20px 0; }
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px; }
+  @media (max-width: 768px) {
+    .post-navigation {
+      display: none; } }
 
 .nav-links .nav-next {
   display: block;
   width: 40%;
+  text-transform: uppercase;
   margin: 10px 5%;
-  float: right;
-  text-align: right; }
-  .nav-links .nav-next:after {
-    content: ">";
-    margin-left: 10px; }
+  float: left;
+  text-align: left; }
+  .nav-links .nav-next:before {
+    content: "<";
+    margin-right: 10px; }
   .nav-links .nav-next a {
     text-decoration: underline; }
 
 .nav-links .nav-previous {
   display: block;
   width: 40%;
+  text-transform: uppercase;
   margin: 10px 5%;
-  float: left;
-  text-align: left; }
-  .nav-links .nav-previous:before {
-    content: "<";
-    margin-right: 10px; }
+  float: right;
+  text-align: right; }
+  .nav-links .nav-previous:after {
+    content: ">";
+    margin-left: 10px; }
   .nav-links .nav-previous a {
     text-decoration: underline; }
 
