@@ -22,10 +22,10 @@
         <?php
             if ( has_post_thumbnail() ) :
             ?>
-            <a href="<?php echo get_permalink(); ?>"> <?php the_post_thumbnail('full', array( 'class' => 'trabajo-imagen')
+            <a href="<?php echo get_permalink(); ?>"><?php the_post_thumbnail('full', array( 'class' => 'trabajo-imagen')
                 );?></a>
             <?php else :
-                echo ('<img class="trabajo-imagen" src="' . get_template_directory_uri() . '/images/logo.svg" alt="laCueva.tv - portfolio">');
+                echo ('<figure><img class="trabajo-imagen" src="' . get_template_directory_uri() . '/images/logo.svg" alt="laCueva.tv - portfolio"></figure>');
             endif;
 
         the_date('', '<p class="trabajo-fecha">', '</p>');

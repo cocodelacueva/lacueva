@@ -328,13 +328,13 @@ form {
   box-shadow: 1px 1px 5px #333; }
   @media (max-width: 1400px) {
     .main-footer {
-      padding: 2% 5%; } }
+      padding: 1% 5%; } }
   @media (max-width: 960px) {
     .main-footer {
-      padding: 3% 5%; } }
+      padding: 1% 5%; } }
   .main-footer h5 {
     float: left;
-    margin: 2% 0;
+    margin: 1% 0;
     font-size: 14px; }
   .main-footer p {
     font-size: 9px;
@@ -345,6 +345,9 @@ form {
     .main-footer .redes li {
       display: inline-block;
       margin-right: 10px; }
+    @media (max-height: 630px) {
+      .main-footer .redes {
+        margin: 0; } }
   @media (max-width: 440px) {
     .main-footer {
       display: none; } }
