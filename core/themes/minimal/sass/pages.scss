@@ -1,0 +1,31 @@
+//single page, pagina standard
+.brand-name-page {
+	margin: 50px 0!important;
+}
+
+.single-page-titulo {
+	text-align: center;
+  	text-transform: uppercase;
+  	font-size: 250%;
+    line-height: 124%;
+}
+
+.single-page-header {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0px 20px 30px 20px;
+}
+
+.single-page-content {
+  box-shadow: 1px 1px 5px #999;
+  background: #fff;
+  padding: 50px 20px;
+
+  @media (max-width: 768px) {
+      box-shadow: none;
+  }
+}
+
+.single-page-content p {
+  line-height: 36px;
+}

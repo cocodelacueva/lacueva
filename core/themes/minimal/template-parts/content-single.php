@@ -38,8 +38,12 @@ $urlOnline = get_post_meta( $post->ID, '_post_data', true );
 	</figure>
 		<a href="<?php echo($urlOnline); ?>" target="_blank" class="btn-online">Ver online</a>
 	</div><!-- .entry-content -->
-
-	<footer class="content-footer-single">
+	<?php
+	$postType = get_post_type();
+	if ( $postType !== 'tarifas' ) :
+	?>
+		<footer class="content-footer-single">
        <?php the_date('', '<p>', '</p>'); ?>
     </footer>
+	<?php endif; ?>
 </article><!-- #post-## -->

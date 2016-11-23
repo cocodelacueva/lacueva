@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - All In One WP Security &#38; Firewall - Development (trunk) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-09-29 22:22:00+0000\n"
+"PO-Revision-Date: 2016-11-02 21:14:07+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -37,7 +37,7 @@ msgstr "All In One WP Security"
 
 #: other-includes/wp-security-unlock-request.php:101
 msgid "Email Address"
-msgstr "Dirección de correo electrónico"
+msgstr "Dirección de Correo Electrónico"
 
 #: other-includes/wp-security-unlock-request.php:73
 msgid "Error: No locked entry was found in the DB with your IP address range!"
@@ -78,11 +78,11 @@ msgstr "Registro completo. Por favor, revise su correo electrónico."
 
 #: other-includes/wp-security-rename-login-feature.php:875
 msgid "Check your e-mail for your new password."
-msgstr "Revise su correo electrónico para su nueva contraseña."
+msgstr "Compruebe su correo electrónico para su nueva contraseña."
 
 #: other-includes/wp-security-rename-login-feature.php:873
 msgid "Check your e-mail for the confirmation link."
-msgstr "Revisa tu correo electrónico para el enlace de confirmación."
+msgstr "Compruebe su correo electrónico para el enlace de confirmación."
 
 #: other-includes/wp-security-rename-login-feature.php:871
 msgid "User registration is currently not allowed."
@@ -94,11 +94,11 @@ msgstr "Has cerrado la sesión."
 
 #: other-includes/wp-security-rename-login-feature.php:865
 msgid "Session expired. Please log in again. You will not move away from this page."
-msgstr "Sesión expirada. Entra en la cuenta de nuevo. No vas a alejarte de esta página."
+msgstr "La sesión ha caducado. Entra en la cuenta de nuevo. Usted no va a alejarse de esta página."
 
 #: other-includes/wp-security-rename-login-feature.php:831
 msgid "You have logged in successfully."
-msgstr "Ha iniciado la sesión correctamente."
+msgstr "Has iniciado la sesión correctamente."
 
 #: other-includes/wp-security-rename-login-feature.php:812
 msgid "<strong>ERROR</strong>: Cookies are blocked or not supported by your browser. You must <a href=\"%s\">enable cookies</a> to use WordPress."
@@ -120,16 +120,16 @@ msgstr "<strong>ERROR</strong>: Las cookies se han bloqueado debido a un resulta
 #: other-includes/wp-security-rename-login-feature.php:768
 #: other-includes/wp-security-rename-login-feature.php:951
 msgid "Lost your password?"
-msgstr "¿Perdió la contraseña?"
+msgstr "¿Has perdió la contraseña?"
 
 #: other-includes/wp-security-rename-login-feature.php:768
 #: other-includes/wp-security-rename-login-feature.php:951
 msgid "Password Lost and Found"
-msgstr "Contraseña Perdida y Encontrada"
+msgstr "La Contraseña Perdida y Encontrada"
 
 #: other-includes/wp-security-rename-login-feature.php:760
 msgid "Registration confirmation will be e-mailed to you."
-msgstr "La confirmación de registro se te enviara por correo electrónico"
+msgstr "La confirmación de registro sera enviada por correo electrónico."
 
 #: other-includes/wp-security-rename-login-feature.php:749
 msgid "E-mail"
@@ -142,7 +142,7 @@ msgstr "Nombre de Usuario"
 
 #: other-includes/wp-security-rename-login-feature.php:740
 msgid "Register For This Site"
-msgstr "Registrase A Este Sitio"
+msgstr "Regístrate En Este Sitio"
 
 #: other-includes/wp-security-rename-login-feature.php:740
 msgid "Registration Form"
@@ -162,12 +162,12 @@ msgstr "Nueva contraseña"
 
 #: other-includes/wp-security-rename-login-feature.php:647
 msgid "Enter your new password below."
-msgstr "A siguiente entre la nueva contraseña."
+msgstr "Ingrese su nueva contraseña abajo."
 
 #: other-includes/wp-security-rename-login-feature.php:647
 #: other-includes/wp-security-rename-login-feature.php:681
 msgid "Reset Password"
-msgstr "Restablecer contraseña"
+msgstr "Restablecer Contraseña"
 
 #: other-includes/wp-security-rename-login-feature.php:639
 msgid "Your password has been reset."
@@ -186,22 +186,22 @@ msgstr "Las contraseñas no son iguales."
 #: other-includes/wp-security-rename-login-feature.php:763
 #: other-includes/wp-security-rename-login-feature.php:945
 msgid "Register"
-msgstr "Registrarse"
+msgstr "Inscribirse"
 
 #: other-includes/wp-security-rename-login-feature.php:576
 #: other-includes/wp-security-rename-login-feature.php:639
 #: other-includes/wp-security-rename-login-feature.php:685
 #: other-includes/wp-security-rename-login-feature.php:767
 msgid "Log in"
-msgstr "Acceder"
+msgstr "Iniciar la sesión "
 
 #: other-includes/wp-security-rename-login-feature.php:572
 msgid "Get New Password"
-msgstr "Obtener nueva contraseña"
+msgstr "Obtener Nueva Contraseña"
 
 #: other-includes/wp-security-rename-login-feature.php:561
 msgid "Username or E-mail:"
-msgstr "Usuario o correo electrónico:"
+msgstr "Nombre de Usuario o Correo Electrónico:"
 
 #: other-includes/wp-security-rename-login-feature.php:553
 msgid "Please enter your username or email address. You will receive a link to create a new password via email."
@@ -209,7 +209,7 @@ msgstr "Por favor, introduzca su nombre de usuario o dirección de correo electr
 
 #: other-includes/wp-security-rename-login-feature.php:553
 msgid "Lost Password"
-msgstr "Contraseña perdida"
+msgstr "Contraseña Perdida"
 
 #: other-includes/wp-security-rename-login-feature.php:532
 msgid "Your password reset link has expired. Please request a new link below."
@@ -225,7 +225,7 @@ msgstr "Posible motivo: su anfitrión puede haber bloqueado la función mail()."
 
 #: other-includes/wp-security-rename-login-feature.php:408
 msgid "The e-mail could not be sent."
-msgstr "El e-mail no pudo ser enviado."
+msgstr "El correo electrónico no pudo ser enviado."
 
 #: other-includes/wp-security-rename-login-feature.php:383
 msgid "[%s] Password Reset"
@@ -241,7 +241,7 @@ msgstr "Si esto fue un error, simplemente ignorar este correo electrónico y no 
 
 #: other-includes/wp-security-rename-login-feature.php:369
 msgid "Username: %s"
-msgstr "Nombre de usuario: %s"
+msgstr "Nombre de Usuario: %s"
 
 #: other-includes/wp-security-rename-login-feature.php:367
 msgid "Someone requested that the password be reset for the following account:"
@@ -249,11 +249,11 @@ msgstr "Alguien pidió que se restablezca la contraseña para la cuenta siguient
 
 #: other-includes/wp-security-rename-login-feature.php:341
 msgid "Password reset is not allowed for this user"
-msgstr "El restablecimiento de contraseña no está permitido para este usuario"
+msgstr "El restablecimiento de la contraseña no está permitido para este usuario"
 
 #: other-includes/wp-security-rename-login-feature.php:303
 msgid "<strong>ERROR</strong>: Invalid username or e-mail."
-msgstr "<strong>ERROR</strong>: Nombre de usuario no es válido o el correo electrónico."
+msgstr "<strong>ERROR</strong>: El nombre de usuario o el correo electrónico no es válido."
 
 #: other-includes/wp-security-rename-login-feature.php:286
 msgid "<strong>ERROR</strong>: There is no user registered with that email address."
@@ -274,15 +274,15 @@ msgstr "¿Estas perdido?"
 #: other-includes/wp-security-rename-login-feature.php:100
 #: other-includes/wp-security-unlock-request.php:14
 msgid "Powered by WordPress"
-msgstr "Impulsado por WordPress"
+msgstr "Accionado por WordPress"
 
 #: other-includes/wp-security-rename-login-feature.php:99
 msgid "https://wordpress.org/"
-msgstr "http://es.wordpress.org/"
+msgstr "https://es.wordpress.org/"
 
 #: classes/wp-security-utility.php:170
 msgid "This feature can only be configured by the \"superadmin\" on the main site."
-msgstr "Esta función sólo puede ser configurado por el \"superadmin\" en el sitio principal."
+msgstr "Esta función sólo puede ser configurada por el \"superadmin\" en el sitio principal."
 
 #: classes/wp-security-utility-ip-address.php:133
 msgid "You cannot ban your own IP address: "
@@ -310,15 +310,15 @@ msgstr "Fuiste desconectado debido a que acaba de cambiar el nombre de usuario \
 #: classes/wp-security-user-login.php:519
 #: classes/wp-security-user-login.php:523
 msgid "Please log back in to continue."
-msgstr "Por favor, vuelva a iniciar sesión para continuar."
+msgstr "Por favor, vuelva a iniciar la sesión para continuar."
 
 #: classes/wp-security-user-login.php:518
 msgid "Your session has expired because it has been over %d minutes since your last login."
-msgstr "Su sesión ha expirado ya que han pasado más de %d minutos desde el último acceso."
+msgstr "Su sesión ha caducado ya que han pasado más de %d minutos desde el último acceso."
 
 #: classes/wp-security-user-login.php:351
 msgid "After clicking the above link you will be able to login to the WordPress administration panel."
-msgstr "Después de hacer clic en el enlace anterior podrás iniciar sesión en el panel de administración de WordPress."
+msgstr "Después de hacer clic en el enlace anterior podrás iniciar una sesión en el panel de administración de WordPress."
 
 #: classes/wp-security-user-login.php:348
 msgid "Unlock Request Notification"
@@ -334,7 +334,7 @@ msgstr "Un evento de bloqueo se ha producido debido a demasiados intentos fallid
 
 #: classes/wp-security-user-login.php:269
 msgid "Site Lockout Notification"
-msgstr "Notificación de bloqueo del sitio"
+msgstr "Notificación de Bloqueo del Sitio"
 
 #: classes/wp-security-user-login.php:146
 msgid "<strong>ACCOUNT PENDING</strong>: Your account is currently not active. An administrator needs to activate your account before you can login."
@@ -403,11 +403,11 @@ msgstr "modificado en:"
 
 #: classes/wp-security-file-scan.php:715
 msgid "The following files were added to your host"
-msgstr "Los siguientes archivos fueron agregados a tu anfitrión."
+msgstr "Los siguientes archivos fueron agregados a tu servidor."
 
 #: classes/wp-security-file-scan.php:673
 msgid "Even though the database scan has not revealed any suspicious entries, this does not necessarily mean that your site is actually completely clean or not compromised."
-msgstr "A pesar de que el análisis de bases de datos no ha revelado ninguna entrada sospechosa, esto no significa necesariamente que su sitio actual está completamente limpio o comprometido."
+msgstr "A pesar de que el análisis de base de datos no ha revelado ninguna entrada sospechosa, esto no significa necesariamente que su sitio actual está completamente limpio o no esta comprometido."
 
 #: classes/wp-security-file-scan.php:667
 msgid "DB Scan was completed successfully. No suspicious entries found."
@@ -451,7 +451,7 @@ msgstr "No se encontró entradas sospechosas en la tabla de usermeta"
 
 #: classes/wp-security-file-scan.php:571
 msgid "Scanning usermeta table........."
-msgstr "Escaneado la tabla de usermeta........."
+msgstr "Escaneando la tabla de usermeta........."
 
 #: classes/wp-security-file-scan.php:567
 msgid "No suspicious entries found in postmeta table"
@@ -459,7 +459,7 @@ msgstr "No se encontró entradas sospechosas en la tabla de postmeta"
 
 #: classes/wp-security-file-scan.php:543
 msgid "Scanning postmeta table........."
-msgstr "exploración de tabla postmeta........."
+msgstr "Escaneando la tabla postmeta........."
 
 #: classes/wp-security-file-scan.php:539
 msgid "No suspicious entries found in comments table"
@@ -467,7 +467,7 @@ msgstr "No se encontró entradas sospechosas en la tabla de comentarios"
 
 #: classes/wp-security-file-scan.php:492
 msgid "Scanning comments table........."
-msgstr "Escaneado comentarios de tabla........."
+msgstr "Escaneando los comentarios de tabla........."
 
 #: classes/wp-security-file-scan.php:488
 msgid "No suspicious entries found in links table"
@@ -481,7 +481,7 @@ msgstr "Posible entrada sospechosa - %s"
 
 #: classes/wp-security-file-scan.php:440
 msgid "Scanning links table........."
-msgstr "Escaneado enlaces de tabla........."
+msgstr "Escaneando enlaces de tabla........."
 
 #: classes/wp-security-file-scan.php:436
 msgid "No suspicious entries found in posts table"
@@ -489,7 +489,7 @@ msgstr "No hay entradas sospechosas que se encuentran en la tabla mensajes"
 
 #: classes/wp-security-file-scan.php:427
 msgid "Possible suspicious entry found (for Post ID: %s) in the following column - %s "
-msgstr "Posible entrada sospechosa encontrada (por ID del anuncio: %s) de la siguiente columna - %s"
+msgstr "Una posible entrada sospechosa encontrada (por el ID de la entrada: %s) de la siguiente columna - %s"
 
 #: classes/wp-security-file-scan.php:387
 msgid "Scanning posts table........."
@@ -497,11 +497,11 @@ msgstr "Escaneando tabla de entradas........."
 
 #: classes/wp-security-file-scan.php:383
 msgid "No suspicious entries found in options table"
-msgstr "No hay entradas sospechosas encontradas en tabla de opciones"
+msgstr "No se ha encontrado entradas sospechosas en la tabla de opciones"
 
 #: classes/wp-security-file-scan.php:374
 msgid "Possible suspicious entry found (for option_id: %s) - %s "
-msgstr "Posible entrada sospechosa encontrada (para la opción id:%s) - %s"
+msgstr "Una posible entrada sospechosa encontrada (para option_id: %s) - %s"
 
 #: classes/wp-security-file-scan.php:360
 msgid "The options table entry with known pharma hack for option_id %s with option_name %s was successfully deleted"
@@ -517,15 +517,15 @@ msgstr "%s y option_id: %s"
 
 #: classes/wp-security-file-scan.php:286
 msgid "Scanning options table........."
-msgstr "Opciones de análisis de tabla ........."
+msgstr "Escaneando las opciones de la tabla ........."
 
 #: classes/wp-security-file-scan.php:282
 msgid "Starting DB scan.....please wait while the plugin scans your database......."
-msgstr "Al comenzar la exploración base de datos ..... por favor espere mientras el plugin explora su base de datos ......."
+msgstr "Comenzando el escaneo de la base de datos ..... por favor espere mientras el plugin escanea su base de datos ......."
 
 #: classes/wp-security-file-scan.php:77
 msgid "Login to your site to view the scan details."
-msgstr "Ingrese a su sitio para ver los detalles del análisis."
+msgstr "Inicie una sesión a su sitio para ver los detalles del análisis."
 
 #: classes/wp-security-file-scan.php:68
 msgid "A summary of the scan results is shown below:"
@@ -533,15 +533,15 @@ msgstr "Un resumen de los resultados del escaneo se muestra a continuación:"
 
 #: classes/wp-security-file-scan.php:67
 msgid ". Scan was generated on"
-msgstr ". Scan fue generada el"
+msgstr ". Scan fue generado en"
 
 #: classes/wp-security-file-scan.php:67
 msgid "A file change was detected on your system for site URL"
-msgstr "Se ha detectado un cambio en un archivo en el sistema de dirección URL del sitio"
+msgstr "Se ha detectado un cambio en un archivo de su sistema de dirección para el URL del sitio"
 
 #: classes/wp-security-file-scan.php:65
 msgid "All In One WP Security - File change detected!"
-msgstr "All In One WP Security - Cambio de archivo detectado!"
+msgstr "¡All In One WP Security - Cambio de archivo detectado!"
 
 #: classes/wp-security-captcha.php:115
 msgid "twenty"
@@ -634,7 +634,7 @@ msgstr "generada en"
 
 #: classes/wp-security-backup.php:191
 msgid "Attached is your latest DB backup file for site URL"
-msgstr "Adjunto está el archivo de copia de seguridad más reciente de BD para dirección URL del sitio."
+msgstr "Adjunto está el archivo de copia de seguridad más reciente de BD para la URL de la dirección del sitio."
 
 #: classes/wp-security-backup.php:189
 msgid "All In One WP Security - Site Database Backup"
@@ -666,7 +666,7 @@ msgstr "Bloquear spam bots"
 
 #: classes/grade-system/wp-security-feature-item-manager.php:97
 msgid "5G Blacklist"
-msgstr "5G Lista Negra"
+msgstr "Lista Negra 5G"
 
 #: classes/grade-system/wp-security-feature-item-manager.php:95
 msgid "Deny Bad Queries"
@@ -1659,7 +1659,7 @@ msgstr "Su archivo \".htaccess\" es un componente clave de la seguridad de su si
 
 #: admin/wp-security-settings-menu.php:267
 msgid ".htaccess File Operations"
-msgstr ".htaccess operaciones de archivo"
+msgstr ".htaccess Operaciones de Archivo"
 
 #: admin/wp-security-settings-menu.php:261
 msgid "htaccess Restore operation failed! Please check the contents of the file you are trying to restore from."
@@ -1894,7 +1894,7 @@ msgstr "Las cuentas seleccionadas se aprobaron con éxito!"
 #: admin/wp-security-list-registered-users.php:133
 #: admin/wp-security-list-registered-users.php:159
 msgid " is now active"
-msgstr "esta activo"
+msgstr "ahora esta activo"
 
 #: admin/wp-security-list-registered-users.php:133
 msgid "Your account with user ID:"
@@ -2072,7 +2072,7 @@ msgstr "Eliminar Todos los Registros de Eventos 404"
 
 #: admin/wp-security-firewall-menu.php:901
 msgid "404 Event Logs"
-msgstr "404 registros de eventos"
+msgstr "Registros de Eventos 404"
 
 #: admin/wp-security-firewall-menu.php:892
 msgid "A blocked visitor will be automatically redirected to this URL."
@@ -2257,7 +2257,7 @@ msgstr "Un bot es una pieza de software que se ejecuta en el Internet y realiza 
 
 #: admin/wp-security-firewall-menu.php:617
 msgid "%s?"
-msgstr "%s?"
+msgstr "¿%s?"
 
 #: admin/wp-security-firewall-menu.php:610
 msgid "Internet Bot Settings"
@@ -2506,7 +2506,7 @@ msgstr "Aparte de la ventaja de protección de seguridad, esta característica t
 
 #: admin/wp-security-firewall-menu.php:205
 msgid "3) Scanning ports in internal networks to get info from various hosts."
-msgstr "3) análisis de puertos en las redes internas para obtener información de varios hosts."
+msgstr "3) Escanear los puertos en las redes internas para obtener información de varios hosts."
 
 #: admin/wp-security-firewall-menu.php:204
 msgid "2) Hacking internal routers."
@@ -2546,7 +2546,7 @@ msgstr "4) Proteger su archivo wp-config.php al negar el acceso a la misma."
 
 #: admin/wp-security-firewall-menu.php:174
 msgid "3) Limit file upload size (10MB)."
-msgstr "3) el tamaño de carga de archivos Límite (10MB)."
+msgstr "3) El limite del tamaño del archivo de carga es (10MB)."
 
 #: admin/wp-security-firewall-menu.php:173
 msgid "2) Disable the server signature."
@@ -2623,7 +2623,7 @@ msgstr "Reglas Personalizadas "
 
 #: admin/wp-security-firewall-menu.php:33
 msgid "404 Detection"
-msgstr "404 Detección"
+msgstr "Detección 404"
 
 #: admin/wp-security-firewall-menu.php:32
 msgid "Prevent Hotlinks"
@@ -2635,7 +2635,7 @@ msgstr "Bots de Internet"
 
 #: admin/wp-security-firewall-menu.php:30
 msgid "5G Blacklist Firewall Rules"
-msgstr "Las reglas de 5G firewall de lista negra"
+msgstr "La Lista Negra De Las Reglas Del Cortafuego 5G"
 
 #: admin/wp-security-firewall-menu.php:29
 msgid "Additional Firewall Rules"
@@ -3502,7 +3502,7 @@ msgstr "N/A"
 
 #: admin/wp-security-dashboard-menu.php:539
 msgid " MB"
-msgstr " MB"
+msgstr "MB"
 
 #: admin/wp-security-dashboard-menu.php:538
 msgid "PHP Memory Usage"
@@ -3976,7 +3976,7 @@ msgstr "2) Introduzca una palabra secreta que consiste en caracteres alfanuméri
 
 #: admin/wp-security-brute-force-menu.php:359
 msgid "1) Enable the checkbox."
-msgstr "1) Active la casilla de verificación."
+msgstr "1) Habilitar la casilla de verificación."
 
 #: admin/wp-security-brute-force-menu.php:357
 msgid "To use this feature do the following:"

@@ -24,7 +24,7 @@
 <meta property="og:title" content="Desarrollo Web" />
 <meta property="og:site_name" content="LaCueva.tv" />
 <meta property="og:image" content="<?php echo(get_template_directory_uri()); ?>/images/screenshot-minimal.jpg" />
-<meta property="og:description" 
+<meta property="og:description"
   content="Agencia de desarrollo web ubicada en Buenos Aires. Comunicadores, diseñadores, programadores siempre al tanto de las últimas tecnologías." />
 
 <meta name="p:domain_verify" content="ffb14f0df54cf30bf3fe0a529110f3ce"/>
@@ -58,13 +58,13 @@
     <?php if ( ! is_page() ) : ?>
         <!--header del portfolio -->
         <h4 itemprop="legalName"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">LaCueva.tv</a></h4>
-        
+
         <h2><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Trabajos</a></h2>
 
         <?php else : ?>
         <!--header de otras paginas -->
         <h2 itemprop="legalName" class="brand-name-page"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">LaCueva.tv</a></h2>
-        
+
     <?php endif;?>
 
         <nav>
@@ -74,9 +74,9 @@
                 <span class="tog2"></span>
                 <span class="tog3"></span>
             </button>
-            <?php wp_nav_menu( array( 
+            <?php wp_nav_menu( array(
                 'primary' => 'Primary Menu',
-                'container' => 'div', 'container_class' => '', 'menu_class' => 'main-menu' 
+                'container' => 'div', 'container_class' => '', 'menu_class' => 'main-menu'
                  )); ?>
             <div class="up-nav">
                 <span class="up-nav-arrow-left"></span>
@@ -90,12 +90,6 @@
         <div class="presentacion">
             <p> <?php echo $textoDescriptivoHead; ?></p>
         </div>
-    <?php endif; ?>    
-    <!--
-        <div class="presentacion">
-            <p>Agencia de <strong>desarrollo web</strong> ubicada en Buenos Aires. <strong>Comunicadores, diseñadores, programadores</strong> con espíritu emprendedor. Un equipo joven, siempre al tanto de las <strong>últimas tecnologías</strong>.</p>
-        </div>    
-        -->
+    <?php endif; ?>
     </aside>
 </header>
-

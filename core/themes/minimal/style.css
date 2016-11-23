@@ -816,12 +816,19 @@ otras páginas
       width: 50%;
       text-align: center; } }
 
+.entry-content {
+  overflow: auto; }
+
 .entri-titulo {
   margin-top: 20px;
-  font-size: 24px;
+  font-size: 200%;
   display: inline-block;
   border-bottom: 1px solid #333;
   padding-bottom: 5px; }
+  @media (max-width: 768px) {
+    .entri-titulo {
+      font-size: 250%;
+      margin-left: 40px; } }
 
 .entri-tags {
   text-transform: uppercase;
@@ -840,7 +847,21 @@ otras páginas
 .entri-text p {
   font-size: 18px;
   line-height: 24px;
-  padding: 20px 10px; }
+  padding: 20px 0; }
+
+.entri-text h3 {
+  text-transform: uppercase;
+  padding: 20px 10px;
+  font-size: 150%; }
+
+.entri-text ul {
+  margin-left: 5px; }
+  .entri-text ul li {
+    margin-left: 15px;
+    list-style-type: circle;
+    line-height: 150%; }
+    .entri-text ul li em {
+      font-size: 70%; }
 
 .entri-figure {
   width: 50%;
@@ -906,19 +927,214 @@ otras páginas
   .nav-links .nav-previous a {
     text-decoration: underline; }
 
+.btn-mastarifas {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 70%;
+  font-family: 'Raleway', sans-serif;
+  box-shadow: 1px 1px 1px #333;
+  font-weight: 300;
+  margin-bottom: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.1s; }
+  .btn-mastarifas:hover {
+    background-color: #555;
+    color: #fff;
+    font-style: italic; }
+
 .brand-name-page {
   margin: 50px 0 !important; }
 
-.single-page {
-  padding: 50px 20px;
-  background: #fff;
-  box-shadow: 1px 1px 5px #999; }
-
-.page-titulo {
+.single-page-titulo {
   text-align: center;
   text-transform: uppercase;
   font-size: 250%;
-  margin-bottom: 50px;
   line-height: 124%; }
+
+.single-page-header {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0px 20px 30px 20px; }
+
+.single-page-content {
+  box-shadow: 1px 1px 5px #999;
+  background: #fff;
+  padding: 50px 20px; }
+  @media (max-width: 768px) {
+    .single-page-content {
+      box-shadow: none; } }
+
+.single-page-content p {
+  line-height: 36px; }
+
+.tarifas-items {
+  text-align: center;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-align-items: stretch;
+  -webkit-justify-content: center;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap; }
+  @media (max-width: 1200px) {
+    .tarifas-items {
+      display: initial; } }
+
+.tarifa-item {
+  background-color: #ececec;
+  width: 29%;
+  display: flex;
+  display: -webkit-flex;
+  vertical-align: top;
+  margin: 50px 2%;
+  box-shadow: 1px 1px 5px #999;
+  flex-basis: 28%;
+  -webkit-flex-basis: 28%; }
+  @media (max-width: 1200px) {
+    .tarifa-item {
+      display: inline-block;
+      width: 100%;
+      margin: 50px 0;
+      box-shadow: none;
+      background: #fff;
+      padding-bottom: 50px;
+      border-bottom: 1px solid #333; }
+      .tarifa-item:last-child {
+        border: none; } }
+  @media (max-width: 768px) {
+    .tarifa-item {
+      margin: 0;
+      margin-bottom: 80px;
+      border-bottom: none; } }
+
+.tarifa {
+  position: relative;
+  padding: 20px;
+  text-align: left; }
+  @media (max-width: 768px) {
+    .tarifa {
+      padding: 40px; } }
+  .tarifa p {
+    line-height: 135%;
+    margin: 20px 0; }
+  .tarifa h3 {
+    font-size: 150%;
+    text-transform: uppercase;
+    margin: 40px 0 10px 0; }
+  .tarifa ul {
+    margin-left: 5px; }
+    .tarifa ul li {
+      margin-left: 15px;
+      list-style-type: circle;
+      line-height: 150%; }
+      .tarifa ul li em {
+        font-size: 70%; }
+
+.titulo-tarifa {
+  font-size: 100%;
+  line-height: 120%;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  cursor: pointer; }
+  @media (max-width: 1200px) {
+    .titulo-tarifa {
+      display: inline-block;
+      width: 50%; } }
+  @media (max-width: 768px) {
+    .titulo-tarifa {
+      font-size: 150%;
+      width: 100%; } }
+
+@media (max-width: 1200px) {
+  .contenido-tarifa {
+    width: 50%;
+    float: left;
+    padding: 0 20px; } }
+@media (max-width: 768px) {
+  .contenido-tarifa {
+    width: 100%;
+    float: none;
+    padding: 0; } }
+
+.tarifa-btn {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #666;
+  line-height: 120%;
+  font-style: italic; }
+  .tarifa-btn:hover {
+    text-decoration: underline; }
+
+.tarifa-imagen {
+  width: 100%;
+  max-width: 480px;
+  margin: 20px auto;
+  height: auto; }
+  .tarifa-imagen img {
+    width: 100%;
+    height: auto; }
+  @media (max-width: 1200px) {
+    .tarifa-imagen {
+      float: left;
+      width: 50%; } }
+  @media (max-width: 768px) {
+    .tarifa-imagen {
+      display: inherit;
+      width: 100%;
+      max-width: 480px;
+      float: none;
+      margin: 20px auto; } }
+
+.tarifa-precio {
+  font-size: 130%;
+  font-weight: 700; }
+  .tarifa-precio:before {
+    content: 'Desde AR$';
+    margin-right: 10px; }
+  @media (max-width: 1200px) {
+    .tarifa-precio {
+      float: left; } }
+
+.tarifa-btn {
+  position: absolute;
+  bottom: -34px;
+  left: 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 90%;
+  box-shadow: 1px 1px 1px #333;
+  transition: all 0.2s; }
+  .tarifa-btn:hover {
+    background-color: #555;
+    color: #fff;
+    font-size: 100%; }
+  @media (max-width: 1200px) {
+    .tarifa-btn {
+      position: static;
+      width: 150px;
+      margin-top: 70px;
+      display: inline-block; } }
+  @media (max-width: 768px) {
+    .tarifa-btn {
+      position: absolute;
+      bottom: -66px;
+      left: 0;
+      width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

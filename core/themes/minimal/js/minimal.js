@@ -1,16 +1,16 @@
 ( function ( $ ) {
-    
+
     //loader
     $( document ).ready(function () {
         setTimeout(function () {
             $(".loader").fadeOut("slow");
         }, 100);
-    });        
+    });
 
     /*
     nav
     */
-    
+
     //abre y cierra el menu movil
     $('.toggle').on('click', function () {
         $('.main-menu').toggleClass('main-menu-open');
@@ -21,16 +21,16 @@
         $('.main-menu').removeClass('main-menu-open');
         $('.toggle').removeClass('toggle-open');
     });
-    
+
     /*
     formulario
     */
     //abre el formulario o va hacia el
     $(".main-menu li a").on("click", function ( event ) {
-        
+
         //solo si hacen clic en contacto
         if ( $(this).attr('href') == '#contact' ) {
-        event.preventDefault();  
+        event.preventDefault();
             //si es pantalla tablet o movil scroll down
             if ( window.innerWidth < 769) {
                 $('html, body').stop().animate({
@@ -51,14 +51,31 @@
                     scrollTop: 0
                 }, "slow");
             $("#form").fadeIn(500).toggleClass("complete-form");
-        } 
+        }
     });
+    //abre el formulario desde el btn que está en tarifas
+    $(".tarifa-btn").on("click", function ( event ) {
+      event.preventDefault();
+          //si es pantalla tablet o movil scroll down
+          if ( window.innerWidth < 769) {
+              $('html, body').stop().animate({
+                  scrollTop: $('#contact').offset().top
+              }, 'slow');
+          } else {
+          //si es pantalla grande va hacia arriba
+          $("html, body").animate({
+              scrollTop: 0
+          }, "slow");
+          //y muestra el formulario
+          $("#form").fadeIn(500).toggleClass("complete-form");
+          }
 
+    });
     //cierra el formulario en la pantalla grande
     $("div.close-form").on("click", function() {
        $("#form").fadeOut(500).addClass("complete-form");
     });
-    
+
     //pagina scroll top
     var obj = $(document);
             obj.on("scroll", function() {
@@ -74,7 +91,7 @@
                     scrollTop: 0
                 }, "slow");});
 
-    
+
 }) ( jQuery );
 
 /**

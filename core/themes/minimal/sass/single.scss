@@ -1,0 +1,213 @@
+//single post:
+.trabajo-single {
+	background-color: #fff;
+	padding: 20px;
+	position: relative;
+}
+
+.content-footer-single {
+	font-size: 70%;
+    line-height: 100%;
+    text-align: right;
+
+    @media (max-width: 768px) {
+      font-size: 100%;
+    }
+}
+
+.btn-online {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 90%;
+    box-shadow: 1px 1px 1px #333;
+    margin-top:30px;
+    display: inline-block;
+
+    &:hover {
+	   color:#999;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 120%;
+      width: 50%;
+      text-align: center;
+    }
+
+}
+
+.entry-content {
+  overflow: auto;
+}
+
+.entri-titulo {
+  margin-top: 20px;
+  font-size: 200%;
+  display: inline-block;
+  border-bottom: 1px solid #333;
+  padding-bottom: 5px;
+
+  @media (max-width: 768px) {
+    font-size: 250%;
+    margin-left: 40px;
+  }
+}
+
+.entri-tags {
+  text-transform: uppercase;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.entri-text {
+  width: 50%;
+  float: left;
+
+  @media (max-width: 768px) {
+    float: none;
+    width: 100%;
+  }
+}
+
+.entri-text p {
+  font-size: 18px;
+  line-height: 24px;
+  padding: 20px 0;
+}
+
+.entri-text h3 {
+  text-transform: uppercase;
+  padding: 20px 10px;
+  font-size: 150%;
+}
+
+.entri-text ul {
+  margin-left: 5px;
+  li {
+    margin-left: 15px;
+    list-style-type: circle;
+    line-height: 150%;
+    em {
+      font-size: 70%;
+    }
+}
+}
+
+.entri-figure {
+  width: 50%;
+  float: left;
+  margin-top: -50px;
+
+  @media (max-width: 768px) {
+    float: none;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+.entri-img {
+  width: 100%;
+  height: auto;
+
+  @media (max-width: 768px) {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+
+//navegacion entre posts
+
+.post-navigation {
+	display: block;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+	padding: 50px 0;
+	overflow: auto;
+
+    h2 {
+        font-size: 150%;
+        text-align: center;
+        color: #666;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    //no muestra la navegacion
+    @media (max-width: 768px) {
+      display: none;
+    }
+}
+
+.nav-links {
+    .nav-next {
+        display: block;
+        width: 40%;
+        text-transform: uppercase;
+        margin: 10px 5%;
+        float: left;
+        text-align: left;
+
+        &:before {
+            content: "<";
+            margin-right: 10px;
+        }
+
+        a {
+            text-decoration: underline;
+        }
+    }
+}
+
+.nav-links {
+    .nav-previous {
+        display: block;
+        width: 40%;
+        text-transform: uppercase;
+        margin: 10px 5%;
+        float: right;
+        text-align: right;;
+
+        &:after {
+            content: ">";
+            margin-left: 10px;
+        }
+
+        a {
+            text-decoration: underline;
+        }
+    }
+}
+
+//btn otras tarifas
+.btn-mastarifas {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 70%;
+    font-family: 'Raleway', sans-serif;
+    box-shadow: 1px 1px 1px #333;
+    font-weight: 300;
+    margin-bottom: 50px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.1s;
+
+    &:hover {
+        background-color: #555;
+        color: #fff;
+        font-style: italic;
+    }
+}
