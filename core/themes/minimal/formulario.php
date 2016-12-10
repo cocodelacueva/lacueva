@@ -8,7 +8,7 @@
  $email    = recogeDato('f_email'); 
  $consulta  = recogeDato('f_message');
  $algunerror = FALSE;
- $cabeceras = "From: " .$email." \n".
+ $cabeceras = "From: info@lacueva.tv \n".
     "Reply-To: " .$email;
  
  

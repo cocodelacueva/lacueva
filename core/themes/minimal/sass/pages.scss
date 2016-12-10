@@ -8,6 +8,10 @@
   	text-transform: uppercase;
   	font-size: 250%;
     line-height: 124%;
+
+		@media (max-width: 768px) {
+	    margin-top: 50px;
+	  }
 }
 
 .single-page-header {

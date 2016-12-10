@@ -24,8 +24,6 @@ function tarifas_shortcode_func ( $atts ) {
   	$tarifas_query = new WP_Query( array(
   			'post_type' => 'tarifas',
         'orderby'   => 'meta_value_num',
-        'meta_key'  => '_tarifa_data',
-        'order'     => 'ASC',
         'posts_per_page' => 6
   		)
   	);
@@ -40,13 +38,14 @@ function tarifas_shortcode_func ( $atts ) {
 							$tarifaPrecio = get_post_meta( get_the_ID(), '_tarifa_data', true );
 
 								echo '<li class="tarifa-item"><article class="tarifa">';
-                echo the_title( '<header><h1 class="titulo-tarifa"><a href="' . get_the_permalink() . '">', '</a></h1></header>' );
+                echo the_title( '<header><h1 class="titulo-tarifa"><a href="' . get_the_permalink() . '">', '</a></h1>' );
+								echo '<a href="' . get_the_permalink() . '" class="btn-detalles-tarifa">', 'Ver detalles</a></header>';
                 echo '<div class="contenido-tarifa">';
 								echo the_content();
-								echo '</div><figure class="tarifa-imagen"><a href="' . get_permalink() . '">';
-								echo the_post_thumbnail();
+								echo '</div><div class="tarifa-precio">' . $tarifaPrecio . '</div>';
+								echo '<figure class="tarifa-imagen"><a href="' . get_permalink() . '">';
+								echo the_post_thumbnail('full', array( 'class' => 'entri-img') );
 								echo '</a></figure>';
-								echo '<div class="tarifa-precio">' . $tarifaPrecio . '</div>';
 								echo '<a href="#" class="tarifa-btn">contacto</a>';
 								echo '</article></li>';
 

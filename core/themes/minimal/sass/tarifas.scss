@@ -8,7 +8,7 @@
     flex-flow: row wrap;
     -webkit-flex-flow: row wrap;
 
-    @media (max-width: 1200px) {
+    @media (max-width: 960px) {
         display: initial;
     }
 
@@ -25,18 +25,13 @@
     flex-basis: 28%;
     -webkit-flex-basis: 28%;
 
-    @media (max-width: 1200px) {
+    @media (max-width: 960px) {
         display: inline-block;
         width: 100%;
         margin: 50px 0;
         box-shadow: none;
         background: #fff;
         padding-bottom: 50px;
-        border-bottom: 1px solid #333;
-
-        &:last-child {
-          border: none;
-        }
     }
 
     @media (max-width: 768px) {
@@ -55,64 +50,90 @@
         padding: 40px;
     }
 
+    blockquote {
+      p {
+        display: block;
+        line-height: 150%;
+        margin: 20px 0;
+        font-weight: 500;
+      }
+    }
     p {
-      line-height: 135%;
+      line-height: 150%;
       margin: 20px 0;
+      display: none;
     }
 
     h3 {
-      font-size: 150%;
+      display: none;
+      font-size: 120%;
       text-transform: uppercase;
       margin: 40px 0 10px 0;
     }
 
     ul {
+      display: none;
       margin-left: 5px;
       li {
         margin-left: 15px;
         list-style-type: circle;
         line-height: 150%;
+        font-size: 80%;
         em {
           font-size: 70%;
+          font-style: italic;
         }
       }
     }
 }
 
+.btn-detalles-tarifa {
+  font-weight: 700;
+  color: #333;
+  line-height: 120%;
+  font-style: italic;
+  font-size: 80%;
+
+  &:hover{
+      text-decoration: underline;
+  }
+}
+
 .titulo-tarifa {
     font-size: 100%;
-    line-height: 120%;
+    line-height: 150%;
     text-decoration: underline;
     text-transform: uppercase;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding-bottom: 10px;
     cursor: pointer;
 
     @media (max-width: 1200px) {
         display: inline-block;
-        width: 50%;
+        width: 100%;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 960px) {
       font-size: 150%;
       width: 100%;
+      margin-bottom: 10px;
     }
 }
 
-.contenido-tarifa {
+/*.contenido-tarifa {
   @media (max-width: 1200px) {
     width: 50%;
     float: left;
     padding: 0 20px;
-  }
+  }*/
 
-  @media (max-width: 768px) {
+  /*@media (max-width: 960px) {
     width: 100%;
     float: none;
     padding: 0;
   }
-}
+}*/
 
 .tarifa-btn {
     text-transform: uppercase;
@@ -143,27 +164,30 @@
         width: 50%;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 960px) {
         display: inherit;
         width: 100%;
         max-width: 480px;
         float: none;
         margin: 20px auto;
+        margin-top: 120px;
     }
 }
 
 .tarifa-precio {
   font-size: 130%;
   font-weight: 700;
+  margin: 30px 0;
+  line-height: 150%;
 
   &:before {
     content: 'Desde AR$';
     margin-right:10px;
   }
 
-  @media (max-width: 1200px) {
+  /*@media (max-width: 1200px) {
     float: left;
-  }
+  }*/
 
 }
 
@@ -188,12 +212,12 @@
         font-size: 100%;
     }
 
-    @media (max-width: 1200px) {
+    /*@media (max-width: 1200px) {
         position: static;
         width: 150px;
         margin-top: 70px;
         display: inline-block;
-    }
+    }*/
 
     @media (max-width: 768px) {
         position: absolute;

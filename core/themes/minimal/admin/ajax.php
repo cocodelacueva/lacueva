@@ -21,7 +21,7 @@ if ( defined( 'DOING_AJAX' ) && DOING_AJAX ) :
         function minimal_load_more_projects_calback() {
             $project_query = new WP_Query( array(
                     'post_type'      => 'post',
-                    'posts_per_page' => 3,
+                    'posts_per_page' => 9,
                     'paged'          => isset( $_POST['page'] ) ? intval( $_POST['page'] ) : 2,
                 )
             );
@@ -39,7 +39,7 @@ if ( defined( 'DOING_AJAX' ) && DOING_AJAX ) :
 
             endif;
 
-            die();
+            exit();
         }
 
     endif;

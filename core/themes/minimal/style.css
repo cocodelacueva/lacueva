@@ -439,7 +439,7 @@ nav {
 
 .wrapper {
   clear: both;
-  padding: 80px 10%; }
+  padding: 50px 10%; }
   @media (max-width: 1400px) {
     .wrapper {
       padding: 80px 5%; } }
@@ -450,8 +450,7 @@ nav {
 .content-header {
   text-align: center;
   text-transform: uppercase;
-  font-size: 250%;
-  margin-bottom: 50px; }
+  font-size: 250%; }
   @media (max-width: 768px) {
     .content-header {
       display: none; } }
@@ -550,7 +549,9 @@ nav {
   font-weight: 700;
   color: #666;
   line-height: 120%;
-  font-style: italic; }
+  font-style: italic;
+  display: block;
+  margin-top: 10px; }
   .trabajo-more-btn:hover {
     text-decoration: underline; }
 
@@ -816,6 +817,28 @@ otras páginas
       width: 50%;
       text-align: center; } }
 
+.btns-tarifa-trabajos-single li {
+  display: inline-block;
+  margin: 0 10px; }
+
+.btn-tarifa-single, .btn-trabajos-single {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 90%;
+  box-shadow: 1px 1px 1px #333;
+  margin-top: 30px;
+  display: block;
+  width: 100px;
+  clear: both;
+  text-align: center; }
+  .btn-tarifa-single:hover, .btn-trabajos-single:hover {
+    color: #999; }
+  @media (max-width: 768px) {
+    .btn-tarifa-single, .btn-trabajos-single {
+      display: none; } }
+
 .entry-content {
   overflow: auto; }
 
@@ -824,7 +847,8 @@ otras páginas
   font-size: 200%;
   display: inline-block;
   border-bottom: 1px solid #333;
-  padding-bottom: 5px; }
+  padding-bottom: 5px;
+  line-height: 130%; }
   @media (max-width: 768px) {
     .entri-titulo {
       font-size: 250%;
@@ -839,10 +863,14 @@ otras páginas
 .entri-text {
   width: 50%;
   float: left; }
-  @media (max-width: 768px) {
+  @media (max-width: 960px) {
     .entri-text {
       float: none;
-      width: 100%; } }
+      width: 100%;
+      padding: 5%; } }
+
+blockquote {
+  font-style: italic; }
 
 .entri-text p {
   font-size: 18px;
@@ -863,22 +891,41 @@ otras páginas
     .entri-text ul li em {
       font-size: 70%; }
 
-.entri-figure {
-  width: 50%;
-  float: left;
-  margin-top: -50px; }
-  @media (max-width: 768px) {
-    .entri-figure {
+.tarifa-en-single {
+  font-size: 130%;
+  font-weight: 700;
+  margin: 30px 0;
+  line-height: 150%; }
+  .tarifa-en-single:before {
+    content: 'Desde AR$';
+    margin-right: 10px; }
+
+.terminos-y-condiciones-link {
+  font-size: 70%; }
+
+.col-right-img {
+  width: 40%;
+  float: right;
+  padding: 1%; }
+  @media (max-width: 1200px) {
+    .col-right-img {
+      width: 45%; } }
+  @media (max-width: 960px) {
+    .col-right-img {
       float: none;
-      width: 100%;
-      margin-top: 20px; } }
+      width: 80%;
+      margin: 50px auto;
+      padding: 0 4%; } }
+
+.entri-figure {
+  padding: 1%; }
 
 .entri-img {
   width: 100%;
   height: auto; }
   @media (max-width: 768px) {
     .entri-img {
-      width: 80%;
+      width: 100%;
       display: block;
       margin: 0 auto; } }
 
@@ -931,19 +978,17 @@ otras páginas
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
+  margin-top: 30px;
   width: 200px;
   text-align: center;
   padding: 10px;
-  background-color: #333;
-  color: #fff;
+  color: #333;
+  border: 1px solid #333;
   text-transform: uppercase;
   font-size: 70%;
   font-family: 'Raleway', sans-serif;
-  box-shadow: 1px 1px 1px #333;
   font-weight: 300;
   margin-bottom: 50px;
-  border: none;
   cursor: pointer;
   transition: all 0.1s; }
   .btn-mastarifas:hover {
@@ -959,6 +1004,9 @@ otras páginas
   text-transform: uppercase;
   font-size: 250%;
   line-height: 124%; }
+  @media (max-width: 768px) {
+    .single-page-titulo {
+      margin-top: 50px; } }
 
 .single-page-header {
   text-align: center;
@@ -984,7 +1032,7 @@ otras páginas
   -webkit-justify-content: center;
   flex-flow: row wrap;
   -webkit-flex-flow: row wrap; }
-  @media (max-width: 1200px) {
+  @media (max-width: 960px) {
     .tarifas-items {
       display: initial; } }
 
@@ -998,17 +1046,14 @@ otras páginas
   box-shadow: 1px 1px 5px #999;
   flex-basis: 28%;
   -webkit-flex-basis: 28%; }
-  @media (max-width: 1200px) {
+  @media (max-width: 960px) {
     .tarifa-item {
       display: inline-block;
       width: 100%;
       margin: 50px 0;
       box-shadow: none;
       background: #fff;
-      padding-bottom: 50px;
-      border-bottom: 1px solid #333; }
-      .tarifa-item:last-child {
-        border: none; } }
+      padding-bottom: 50px; } }
   @media (max-width: 768px) {
     .tarifa-item {
       margin: 0;
@@ -1022,51 +1067,72 @@ otras páginas
   @media (max-width: 768px) {
     .tarifa {
       padding: 40px; } }
+  .tarifa blockquote p {
+    display: block;
+    line-height: 150%;
+    margin: 20px 0;
+    font-weight: 500; }
   .tarifa p {
-    line-height: 135%;
-    margin: 20px 0; }
+    line-height: 150%;
+    margin: 20px 0;
+    display: none; }
   .tarifa h3 {
-    font-size: 150%;
+    display: none;
+    font-size: 120%;
     text-transform: uppercase;
     margin: 40px 0 10px 0; }
   .tarifa ul {
+    display: none;
     margin-left: 5px; }
     .tarifa ul li {
       margin-left: 15px;
       list-style-type: circle;
-      line-height: 150%; }
+      line-height: 150%;
+      font-size: 80%; }
       .tarifa ul li em {
-        font-size: 70%; }
+        font-size: 70%;
+        font-style: italic; }
+
+.btn-detalles-tarifa {
+  font-weight: 700;
+  color: #333;
+  line-height: 120%;
+  font-style: italic;
+  font-size: 80%; }
+  .btn-detalles-tarifa:hover {
+    text-decoration: underline; }
 
 .titulo-tarifa {
   font-size: 100%;
-  line-height: 120%;
+  line-height: 150%;
   text-decoration: underline;
   text-transform: uppercase;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding-bottom: 10px;
   cursor: pointer; }
   @media (max-width: 1200px) {
     .titulo-tarifa {
       display: inline-block;
-      width: 50%; } }
-  @media (max-width: 768px) {
+      width: 100%; } }
+  @media (max-width: 960px) {
     .titulo-tarifa {
       font-size: 150%;
-      width: 100%; } }
+      width: 100%;
+      margin-bottom: 10px; } }
 
-@media (max-width: 1200px) {
-  .contenido-tarifa {
+/*.contenido-tarifa {
+  @media (max-width: 1200px) {
     width: 50%;
     float: left;
-    padding: 0 20px; } }
-@media (max-width: 768px) {
-  .contenido-tarifa {
+    padding: 0 20px;
+  }*/
+  /*@media (max-width: 960px) {
     width: 100%;
     float: none;
-    padding: 0; } }
-
+    padding: 0;
+  }
+}*/
 .tarifa-btn {
   text-transform: uppercase;
   font-weight: 700;
@@ -1088,23 +1154,26 @@ otras páginas
     .tarifa-imagen {
       float: left;
       width: 50%; } }
-  @media (max-width: 768px) {
+  @media (max-width: 960px) {
     .tarifa-imagen {
       display: inherit;
       width: 100%;
       max-width: 480px;
       float: none;
-      margin: 20px auto; } }
+      margin: 20px auto;
+      margin-top: 120px; } }
 
 .tarifa-precio {
   font-size: 130%;
-  font-weight: 700; }
+  font-weight: 700;
+  margin: 30px 0;
+  line-height: 150%;
+  /*@media (max-width: 1200px) {
+    float: left;
+  }*/ }
   .tarifa-precio:before {
     content: 'Desde AR$';
     margin-right: 10px; }
-  @media (max-width: 1200px) {
-    .tarifa-precio {
-      float: left; } }
 
 .tarifa-btn {
   position: absolute;
@@ -1119,17 +1188,17 @@ otras páginas
   text-transform: uppercase;
   font-size: 90%;
   box-shadow: 1px 1px 1px #333;
-  transition: all 0.2s; }
+  transition: all 0.2s;
+  /*@media (max-width: 1200px) {
+      position: static;
+      width: 150px;
+      margin-top: 70px;
+      display: inline-block;
+  }*/ }
   .tarifa-btn:hover {
     background-color: #555;
     color: #fff;
     font-size: 100%; }
-  @media (max-width: 1200px) {
-    .tarifa-btn {
-      position: static;
-      width: 150px;
-      margin-top: 70px;
-      display: inline-block; } }
   @media (max-width: 768px) {
     .tarifa-btn {
       position: absolute;

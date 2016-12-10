@@ -53,7 +53,7 @@
             $("#form").fadeIn(500).toggleClass("complete-form");
         }
     });
-    //abre el formulario desde el btn que está en tarifas
+    //abre el formulario desde el btn que está en tarifas index
     $(".tarifa-btn").on("click", function ( event ) {
       event.preventDefault();
           //si es pantalla tablet o movil scroll down
@@ -71,10 +71,39 @@
           }
 
     });
+
+    //abre el formulario desde el btn que está en tarifas single
+    $(".btn-tarifa-single").on("click", function ( event ) {
+      console.log("hola");
+      event.preventDefault();
+          //si es pantalla tablet o movil scroll down
+          if ( window.innerWidth < 769) {
+              $('html, body').stop().animate({
+                  scrollTop: $('#contact').offset().top
+              }, 'slow');
+          } else {
+          //si es pantalla grande va hacia arriba
+          $("html, body").animate({
+              scrollTop: 0
+          }, "slow");
+          //y muestra el formulario
+          $("#form").fadeIn(500).toggleClass("complete-form");
+          }
+    });
+
     //cierra el formulario en la pantalla grande
     $("div.close-form").on("click", function() {
        $("#form").fadeOut(500).addClass("complete-form");
     });
+
+    //cierra el formulario presionando escape
+    $(document).keyup(function(event){
+        if(event.which==27) {
+          console.log("hola");
+          $("#form").fadeOut(500).addClass("complete-form");
+        }
+    });
+
 
     //pagina scroll top
     var obj = $(document);

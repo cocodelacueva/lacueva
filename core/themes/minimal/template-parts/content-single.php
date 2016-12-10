@@ -6,6 +6,8 @@
  */
 
 $urlOnline = get_post_meta( $post->ID, '_post_data', true );
+$postType = get_post_type();
+$tarifaPrecio = get_post_meta( get_the_ID(), '_tarifa_data', true );
 ?>
 
 <article id="post-<?php the_ID(); ?>" class="trabajo-single">
@@ -29,17 +31,37 @@ $urlOnline = get_post_meta( $post->ID, '_post_data', true );
 			) );
 			?>
 		</div>
-		<figure class="entri-figure">
+		<div class="col-right-img">
+			<?php
+			//$postType = get_post_type();
+				if ( $postType == 'tarifas' ) : ?>
+					<figure class="entri-figure">
+				<?php else : ?>
+					<figure class="entri-figure-tarifa">
+				<?php endif;
+					if ( has_post_thumbnail() ) {
+					the_post_thumbnail('full', array( 'class' => 'entri-img')
+				); }
+				?>
+			</figure>
 		<?php
-			if ( has_post_thumbnail() ) {
-			the_post_thumbnail('full', array( 'class' => 'entri-img')
-		); }
-		?>
-	</figure>
-		<a href="<?php echo($urlOnline); ?>" target="_blank" class="btn-online">Ver online</a>
+		//$postType = get_post_type();
+			if ( $postType == 'tarifas' ) : ?>
+				<ul class="btns-tarifa-trabajos-single">
+					<li><a href="#" class="btn-tarifa-single">Contacto</a></li>
+					<li><a href="/trabajos/" class="btn-trabajos-single">Trabajos</a></li>
+				</ul>
+				<div class="tarifa-en-single">
+					<?php echo($tarifaPrecio); ?>
+				</div>
+				<a href="/terminos-y-condiciones/" target="_blank" class="terminos-y-condiciones-link">Ver términos y condiciones</a>
+			<?php else : ?>
+				<a href="<?php echo($urlOnline); ?>" target="_blank" class="btn-online">Ver online</a>
+			<?php endif; ?>
+		</div>
 	</div><!-- .entry-content -->
 	<?php
-	$postType = get_post_type();
+	//$postType = get_post_type();
 	if ( $postType !== 'tarifas' ) :
 	?>
 		<footer class="content-footer-single">

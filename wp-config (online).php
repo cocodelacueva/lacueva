@@ -46,14 +46,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         '[h1g&?b&&hxZlNVA_^1Rr)--aMC20m+y1 >n*`p+Or4-3?_a@-J#dOZ.z/[|wn;}');
-define('SECURE_AUTH_KEY',  'iC~wl%jh.py7iDe-W@s%AcBEI|y82oM^NY-Ogkd5+SvK=0fitHPlfps>;&se;-/4');
-define('LOGGED_IN_KEY',    '!hnAgVW;!wU:Km#d^|^rJnR1FSM i~lre2^pqJNEWRtbG?pfpy[_SS`_-(|kCO/S');
-define('NONCE_KEY',        'bG^auII=.K{MDK-?F,@.szW;~ kO>!ehtow= 4m5)1}aD_c?+E`Q:%tY3eHAsT= ');
-define('AUTH_SALT',        '-P5o|NSgZ,ElsJMfrpu,T2O6j1SGVQxx(>8DSr5xQ=Cv-*&6MDntJ{*g-2_,~_K`');
-define('SECURE_AUTH_SALT', 'XtlR=~Dm/Ava>2x@%{Qj y%[IQ,8{P|wG<IZ:i~$fMh`cSW=#6e#>{f9`OcK!Y%a');
-define('LOGGED_IN_SALT',   ';Im!|]r;=,?ow`F#93Suv^5q81_[/+%>BRGY&t7^>ZxZ;ERB9;./dO-TLisKV&.d');
-define('NONCE_SALT',       '2gyc3VE YGG2fXK+-%;p}6I=,92!V-.vU{8tngtc7a:4{j8-aq0w=%t9U|V|D?iM');
+define('AUTH_KEY',         '!=YttJ,U]oqG,P]m[{Gm{a<CjUyxK1I|m+~aMJ evYHN}!Wyk=aUk3Ow3,l8t1xc');
+define('SECURE_AUTH_KEY',  'q6e/fCVMg$|+Bqm[++a<[pWs{m-Fj!u?,{[P@}^V1)g3EzmppnP!,m<.6#Z>.t/`');
+define('LOGGED_IN_KEY',    '8.zV9F@gp!QNK6RFF#!c5W2=M|GPQtjDl5y j5y]D39tL)5p%v3`p||etX8?yN=G');
+define('NONCE_KEY',        'a|x@-<|JpT^|qOYVBWK8Im&?>s|Gpo3;Kr%{lu@=4%485 + r{M!6?U*jmGH+qmr');
+define('AUTH_SALT',        'JGN#Tx=V1^YM.k_1>Bd(h/^>|P@tDyG+:Z-3)L8&W01[s}%f 0s&VR->U[Gul-vp');
+define('SECURE_AUTH_SALT', 'WWRo]SO/WvmrW:wD?&qZ+aizEC6EPK&oO-&doCc(>b/rzNf5+kyC*jD@][$[,,KG');
+define('LOGGED_IN_SALT',   '5N_|4~M:+3Q!-BL2jO/ni0e}G+|5{VsvSO2oeP>pdl|tJ!]7NU:,<G<-m6+^s<Y.');
+define('NONCE_SALT',       'Y+Yj|dBVJ<sc-g($`;i-|Iz%T.Nt$_UNm=XbzJOD55D!T-+B:R-:NLcRs6%6=Zkz');
 
 
 /**
@@ -73,10 +73,10 @@ $table_prefix = 'lqva_';
  * Se recomienda encarecidamente a los desarrolladores de temas y plugins que usen WP_DEBUG
  * en sus entornos de desarrollo.
  */
-define('WP_DEBUG', true);
+define('WP_DEBUG', false);
 
-define('WP_HOME','http://demo-lacueva.com');
-define('WP_SITEURL','http://demo-lacueva.com/wp');
+define('WP_HOME','http://lacueva.tv');
+define('WP_SITEURL','http://lacueva.tv/wp');
 
 /**
  * Custom content directory.

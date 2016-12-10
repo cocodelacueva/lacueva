@@ -363,7 +363,7 @@ nav {
 
 .wrapper {
     clear: both;
-    padding: 80px 10%;
+    padding: 50px 10%;
 
     @media (max-width: 1400px) {
         padding: 80px 5%;
@@ -379,7 +379,6 @@ nav {
     text-align: center;
     text-transform: uppercase;
     font-size: 250%;
-    margin-bottom: 50px;
 
     @media (max-width: 768px) {
         display: none;
