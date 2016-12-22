@@ -1,0 +1,47 @@
+footer {
+    position: absolute;
+    bottom: 0;
+    padding: 0% 5%;
+    width: 100%;
+    background: $negro;
+    
+    h5 {
+        float: left;
+        margin: 2% 0;
+        font-size: 14px;
+    }
+    p {
+        font-size: 8px;
+        text-align: center;
+    }
+
+    @media (max-width: $mq-tablet) {
+        position: static;
+    }
+    
+}
+.redes {
+        float: right;
+        margin: 1%;
+        li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+    }
+.red-icon {
+    background: url(../images/sprite_minimal.png);
+                display: inline-block;
+                width: 25px;
+                height: 23px;
+    &:hover {
+        opacity: 0.2;
+    }
+}
+
+.red-icon-contacto {background-position: -18px -13px;vertical-align: middle;}
+.red-icon-email {background-position: -18px -13px}
+.red-icon-face {background-position: -65px -11px}
+.red-icon-plus {background-position: -113px -11px}
+.red-icon-linkedin {background-position: -165px -11px}
+.red-icon-github {background-position: -211px -11px}
+.red-icon-pinterest {background-position: -258px -11px}

@@ -1,0 +1,15 @@
+.loader {
+    position: absolute;
+    height: 112%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $gris-clarito;
+    color: $negro;
+    z-index: 111;
+    
+    p {
+        font-size: 24px;
+    }
+}

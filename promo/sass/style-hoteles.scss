@@ -1,0 +1,367 @@
+/*Lacueva.tv - promos - hoteles*/
+@import 'reset';
+@import 'variables';
+/*loader*/
+@import 'loader';
+
+/* estilo general*/
+html, body {
+    background-color: $blanco;
+    color: $negro;
+    font-family: $letra-minimal;
+    font-size: $fs-normal;
+    line-height: $lh-doble;
+    font-weight: $light;
+    height: 100%;
+    letter-spacing: 1px;
+    position: relative;
+
+    @media (max-width: $mq-tablet) {
+        font-size: 120%;
+        line-height: 150%;
+    }
+
+    @media (max-width: $mq-movil) {
+        font-size: $fs-normal;
+        line-height: $lh-doble;
+    }
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+
+    @media (max-width: $mq-tablet) {
+        padding: 0 50px;
+        height: auto;
+    }
+}
+
+/*------ cabecera -------*/
+header {
+    overflow: auto;
+
+    h1 {
+        white-space: pre-line;
+        font-size: 220%;
+        line-height: 150%;
+
+        strong {
+            font-size: 140%;
+            @media (max-width: $mq-tablet) {
+                font-size: inherit;
+            }
+        }
+        em {
+            font-weight: $semibold;
+            font-size: 95%;
+            @media (max-width: $mq-tablet) {
+                font-size: inherit;
+            }
+        }
+
+        //queries de h1
+        @media (max-width: $mq-tablet) {
+            white-space: normal;
+            text-align: right;
+            font-size: 200%;
+            text-transform: uppercase;
+        }
+        @media (max-width: $mq-movil) {
+            font-size: 170%;
+        }
+    }
+
+    h4 {
+        font-size: 140%;
+        line-height: 130%;
+        width: 40%;
+        text-align: right;
+        float: right;
+        margin-top: 200px;
+
+        strong {
+            font-weight: 600;
+        }
+
+        span {
+            text-decoration: underline;
+            font-style: italic;
+        }
+
+        @media (max-width: $mq-tablet) {
+            text-align: center;
+            margin-top: 50px;
+            width: 100%;
+            margin-bottom: 50px;
+        }
+    }
+    //querie del header
+    @media (max-width: $mq-tablet) {
+        padding: 50px 0px;
+    }
+}//header
+
+.imagen-portada {
+    //width: 718px;
+    //height: 411px;
+    width: 60%;
+    overflow: visible;
+    float: left;
+    margin-top: 70px;
+
+    @media (max-width: $mq-tablet) {
+        width: 100%;
+        float: none;
+        margin-top: 0;
+    }
+
+    img {
+        width: 120%;
+        height: auto;
+
+        @media (max-width: $mq-tablet) {
+            width: 100%;
+        }
+    }
+}
+
+.timbre {
+    width: 400px;
+    height: 360px;
+    background: url(../images/hoteles-timbre.jpg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    @media (max-width: $mq-tablet) {
+        width: 269px;
+        height: 243px;
+        top: 230px;
+    }
+
+    @media (max-width: $mq-movil) {
+        display: none;
+    }
+
+}//timbre
+
+.btn-ctn-wrapper {
+    float: right;
+    clear: right;
+    width: 30%;
+    margin-top: 40px;
+
+    @media (max-width: $mq-tablet) {
+        float: none;
+        clear: both;
+        width: 100%;
+        max-width: 768px;
+    }
+}
+
+.btns-wrapper {
+    display: block;
+    width: 30%;
+    margin: 40px auto;
+    @media (max-width: $mq-tablet) {
+            width: 100%;
+            max-width: 768px;
+        }
+}
+
+section {
+    clear: both;
+    padding: 50px 0;
+}
+
+.sub-titulos {
+    font-size: 220%;
+    line-height: 150%;
+    border-left: 1px solid $negro;
+    padding-left: 20px;
+    margin: 40px 0;
+}
+
+/*------ separador -------*/
+.frase {
+    font-size: 200%;
+    line-height: 130%;
+    font-style: italic;
+
+    @media (max-width: $mq-tablet) {
+        font-size: 150%;
+    }
+
+}
+/*------ parrafo -------*/
+.parrafo-contenido {
+
+    p {
+        float: right; 
+        width: 50%;
+        padding: 10px 20px;
+        border-left: solid 2px $negro;
+        font-size: 120%;
+        line-height: 140%;
+        strong {
+            font-weight: 600;
+        }
+        em {
+            font-style: italic;
+        }
+
+        @media (max-width: $mq-tablet) {
+            float: none;
+            width: 100%;
+            padding: 5px 0px;
+            margin: 80px 0;
+            border: none;
+        }
+    }
+
+    img {
+        float: right; 
+        width: 50%;
+        @media (max-width: $mq-tablet) {
+            float: none;
+            width: 100%;
+        }
+    }
+}
+
+/*------ ejemplos-------*/
+.img-ejemplos {
+    width: 100%;
+    overflow: auto;
+
+    li {
+        width: 50%;
+        float: left;
+        padding: 0 1%;
+
+        @media (max-width: $mq-tablet) {
+            float: none;
+            width: 100%;
+        }
+    }
+    img {
+        width:100%;
+    }
+}
+
+
+/*------ caracteristicas -------*/
+.caracteristicas {
+    overflow: auto;
+    
+    .carac-titulo {
+        width: 50%;
+        float: left;
+
+        @media (max-width: $mq-tablet) {
+            float: none;
+            width: 100%;
+            margin: 50px 0;
+        }
+
+        h2 {
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        h5 {
+            margin-left: 40px;
+            font-style: italic;
+            font-size: 90%;
+        }
+    }
+
+    .carac-li {
+        width: 50%;
+        float: left; 
+        @media (max-width: $mq-tablet) {
+            float: none;
+            width: 100%;
+            margin: 100px 0;
+        }
+
+        li {
+            margin: 10px 0;
+            font-size: 120%;
+            line-height: 140%;
+
+            &:before {
+                content: "-";
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+
+/*formulario de contacto*/
+@import 'form-style';
+
+.section-form {
+    @media (max-width: $mq-tablet) {
+        background-color: rgba(26,26,26,0.9)!important;
+    }
+}
+
+/*------ pie -------*/
+footer {
+    overflow: auto;
+    padding-bottom: 60px;
+
+
+    article {
+        width: 30%;
+        float: right;
+        margin: 0 1%;
+
+        @media (max-width: $mq-tablet) {
+            width: 100%;
+            float: none;
+            margin: 80px 0;
+        }
+        h1 {
+            font-size: 140%;
+            margin-bottom: 20px;
+            line-height: 130%;
+            font-weight: 600;
+        }
+
+        p {
+            font-style: italic;
+            padding-right: 20px;
+        }
+
+        nav {
+            margin: 20px 0;
+
+            a {
+                border-right: solid 1px $negro;
+                padding: 0 10px;
+                &:last-child {
+                    border: none;
+                }
+            }
+        }
+    }
+
+
+}//footer
+.no-view-tablet {
+    @media (max-width: $mq-tablet) {
+        display: none;
+    }
+}
+/*redes*/
+@import 'redes';
+/*botones*/
+@import 'btn';

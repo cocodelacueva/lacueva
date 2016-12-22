@@ -1,0 +1,385 @@
+/*Lacueva.tv - promos - agencias*/
+@import 'reset';
+@import 'variables';
+/*loader*/
+@import 'loader';
+
+/* estilo general*/
+html, body {
+    background-color: $blanco;
+    color: $negro;
+    font-family: $letra-minimal;
+    font-size: $fs-normal;
+    line-height: $lh-doble;
+    font-weight: $light;
+    height: 100%;
+    letter-spacing: 1px;
+    position: relative;
+
+    @media (max-width: $mq-tablet) {
+        //font-size: 120%;
+        //line-height: 150%;
+    }
+
+    @media (max-width: $mq-movil) {
+        //font-size: $fs-normal;
+        //line-height: $lh-doble;
+    }
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 10px;
+
+    @media (max-width: $mq-tablet) {
+        padding: 0 50px;
+    }
+}
+
+/*------ cabecera -------*/
+header {
+	clear: both;
+	overflow: auto;
+	color: $negro;
+	padding: 80px 0;
+
+	h1 {
+		font-size: 225%;
+		font-weight: $light;
+		line-height: 130%;
+		margin-bottom: 50px;
+	}
+
+	ul {
+		font-size: 110%;
+		margin-bottom: 50px;
+		li:before {
+			content: "-";
+			margin-right: 10px;
+		}
+
+		@media (max-width: $mq-tablet) {
+			width: 60%;
+		}
+		@media (max-width: $mq-movil) {
+			width: 100%;
+		}
+	}
+
+}//header
+
+.img-header {
+	width: 50%;
+	float: right;
+
+	img {
+		width: 80%;
+		margin: 0 auto;
+		display: block;
+	}
+	@media (max-width: $mq-tablet) {
+		position: absolute;
+		right: 0;
+	}
+	@media (max-width: $mq-movil) {
+		display: none;
+		z-index: 1;
+	}
+}
+
+.texto-header {
+	width: 50%;
+	float: left;
+
+	@media (max-width: $mq-tablet) {
+		float: none;
+		width: 100%;
+		position: relative;
+		z-index: 11;
+	}
+
+}//texto header
+
+
+//títulos pintados
+.inline-decore {
+	span {
+		color: $blanco;
+		background-color: $negro;
+	}
+}
+
+
+
+/*------ parrafo descripcion-------*/
+.main {
+	clear: both;
+	overflow: auto;
+	position: relative;
+
+	@media (max-width: $mq-tablet) {
+		overflow: visible;
+	}
+}
+.descripcion {
+}//descripcion
+
+.img-fondo-verde{
+	float: left;
+	width: 50%;
+	background-color: $blanco;
+	img {
+		width: 80%;
+		display: block;
+		margin: 0 auto;
+		//queries img
+	}
+	@media (max-width: $mq-tablet) {
+		float: none;
+		width: 100%;
+		margin: 50px auto;
+	}
+}
+
+.texto-descriptivo {
+	float: left;
+	width: 50%;
+
+	p {
+		margin: 15px 0;
+
+		em {
+			font-style: italic;
+		}
+	}
+
+	h5 {
+		font-weight: $semibold;
+	}
+
+	//queries texto-descriptivo
+	@media (max-width: $mq-tablet) {
+		float: none;
+		width: 100%;
+	}
+}
+/*------ lacueva.tv-------*/
+.lacueva-text {
+	clear:both;
+
+	p {
+		text-transform: uppercase;
+		font-weight: $semibold;
+		padding: 50px 0;
+	}
+}
+
+/*------ contacto y presupuesto -------*/
+//seccion y titulos formulario
+#contacto {
+	padding: 50px 50px;
+	max-width: 1024px;
+    margin: 0 auto;
+	clear: both;
+	overflow: auto;
+	position: relative;
+	@media (max-width: $mq-tablet) {
+		padding: 50px 20px;
+	}
+
+    h2 {
+    	font-size: 225%;
+		font-weight: $light;
+		line-height: 130%;
+		margin-bottom: 50px;
+		text-align: center;
+    }
+
+    p {
+    	font-size: 90%;
+    	text-align: center;
+    }
+}
+
+.row {
+	clear: both;
+	width: 100%;
+	overflow: auto;
+	padding: 25px 40px;
+}
+
+.row-in {
+	clear: both;
+	width: 100%;
+	//overflow: auto;
+	padding: 10px 0;
+}
+
+.col-l {
+	width: 50%;
+	float: left;
+
+	@media (max-width: $mq-tablet) {
+		float: none;
+		width: 100%;
+	}
+}
+
+.col-r {
+	width: 50%;
+	float: left;
+
+	@media (max-width: $mq-tablet) {
+		float: none;
+		width: 100%;
+	}
+}
+
+.col-l-in {
+	width: 50%;
+	float: left;
+
+	@media (max-width: $mq-tablet) {
+		width: 90%
+	}
+}
+
+.col-r-in {
+	width: 50%;
+	float: left;
+
+	@media (max-width: $mq-tablet) {
+		width: 10%
+	}
+}
+
+.adorno-valija {
+	background: url(../images/agencias-valija.png) no-repeat;
+	background-size: 100% 100%;
+	width: 217px;
+	height: 194px;
+	position: absolute;
+    bottom: 4%;
+    right: 5%;
+
+    @media (max-width: $mq-tablet) {
+    	display: none;
+    }
+}
+
+/*formulario en sí*/
+form {
+	margin: 30px 0;
+
+	h3 {
+		font-weight: $light;
+		font-size: 155%;
+	    margin-top: 15px;
+	    margin-bottom: 30px;
+	    line-height: 150%;
+	}
+	label {
+		width: 95%;
+		margin: 10px auto;
+		display: inline-block;
+	}
+	input {
+		width: 95%;
+    	margin: 0 auto;
+    	display: inline-block;
+    	border: none;
+    	border-bottom: 1px solid $negro;
+    	height: 35px;
+    	padding: 2px 5px;
+	}
+
+	textarea {
+		width: 100%;
+    	margin: 0 auto;
+    	display: inline-block;
+    	height: 145px;
+    	padding: 2px 5px;
+	}
+
+	input[type=checkbox], input[type=radio] {
+		//background: url(../images/sprite-promos.png);
+		//background-position: 1px 1px;
+		height: initial;
+		width: 50px;
+	}
+
+	button {
+		border: none;
+	    margin-top: 50px;
+	}
+	//checkbox del formulario
+	input[type=checkbox] {
+		display: none;
+	}
+	input[type=checkbox] + label span {
+		display: inline-block;
+		width: 40px;
+		height: 40px;
+		background: url(../images/sprite-promos.png) no-repeat;
+		background-position: -213px -51px;
+	}
+
+	input[type=checkbox]:checked + label span {
+		background-position: -264px -51px;
+	}
+
+	input[type=radio] {
+		display: none;
+	}
+	input[type=radio] + label span {
+		display: inline-block;
+		width: 40px;
+		height: 40px;
+		background: url(../images/sprite-promos.png) no-repeat;
+		background-position: -213px -51px;
+	}
+
+	input[type=radio]:checked + label span {
+		background-position: -264px -51px;
+	}
+}
+
+
+/*------ footer -------*/
+footer {
+	margin-top: 50px;
+	width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 15px 0;
+
+    h6 {
+    	display: inline-block;
+    	margin-top: 17px;
+
+    	@media (max-width: $mq-movil) {
+        	display: none;
+    }
+    }
+
+    @media (max-width: $mq-tablet) {
+        padding: 25px 100px;
+    }
+
+    @media (max-width: $mq-movil) {
+        padding: 25px 50px;
+    }
+}
+
+/*redes*/
+@import 'redes';
+/*botones*/
+.btn-wrapper {
+	width: 270px;
+	@media (max-width: $mq-tablet) {}
+}
+@import 'btn';

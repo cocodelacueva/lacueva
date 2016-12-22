@@ -1,0 +1,59 @@
+.redes {
+        float: right;
+        margin: 1%;
+        li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+    }
+.red-icon {
+    background: url(../images/sprite_minimal.png);
+                display: inline-block;
+                width: 25px;
+                height: 23px;
+    &:hover {
+        opacity: 0.2;
+    }
+}
+
+.red-icon-contacto {background-position: -18px -13px;vertical-align: middle;}
+.red-icon-email {background-position: -18px -13px}
+.red-icon-face {background-position: -65px -11px}
+.red-icon-plus {background-position: -113px -11px}
+.red-icon-linkedin {background-position: -165px -11px}
+.red-icon-github {background-position: -211px -11px}
+.red-icon-pinterest {background-position: -258px -11px}
+/*copyright*/
+.copyright {
+    font-size: 70%;
+    clear: both;
+}
+
+.copy-right {
+    text-align: right;
+}
+
+/* redes negros*/
+.redes-left {
+        float: left;
+        margin: 5% 1%;
+        li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+    }
+.red-icon-negro {
+    background: url(../images/sprite-promos.png);
+                display: inline-block;
+                width: 30px;
+                height: 20px;
+    &:hover {
+        opacity: 0.2;
+    }
+}
+
+.red-icon-negro-email {background-position: -16px -66px}
+.red-icon-negro-face {background-position: -51px -66px}
+.red-icon-negro-plus {background-position: -84px -66px}
+.red-icon-negro-linkedin {background-position: -117px -66px}
+.red-icon-negro-pinterest {background-position: -159px -66px}

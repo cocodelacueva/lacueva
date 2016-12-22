@@ -20,7 +20,7 @@
 <link rel="shortcut icon" href="http://lacueva.tv/favicon.ico">
 <link rel="apple-touch-icon" href="http://lacueva.tv/apple-touch-icon-precomposed.png">
 
-<meta property="og:url" content="http://lacueva.tv/" />
+<meta property="og:url" content="http://lacueva.tv/trabajos/" />
 <meta property="og:title" content="Desarrollo Web" />
 <meta property="og:site_name" content="LaCueva.tv" />
 <meta property="og:image" content="<?php echo(get_template_directory_uri()); ?>/images/screenshot-minimal.jpg" />

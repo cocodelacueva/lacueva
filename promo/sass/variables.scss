@@ -1,0 +1,36 @@
+/*Familia Fuentes*/
+$letra-minimal: 'Raleway', 'Verdana', sans-serif;
+
+/*tamaños fuentes*/
+$fs-normal: 16px;
+$lh-normal: 18px;
+$lh-doble: 24px;
+$fs-movil: 18px;
+$lh-movil: 24px;
+
+/*weight de las fuentes*/
+$bold: 800;
+$semibold: 600;
+$light: 300;
+$ultralight: 200;
+
+/*colores*/
+$negro: #333;
+$negro-btn: #1a1a1a;
+$gris-claro: #f5f5f5;
+$gris-clarito: #ececec;
+$blanco: #ffffff;
+$negro-transparente: rgba(26, 26, 26, 0.8);
+
+/*mediaqueries*/
+$mq-bpc: 1600px;
+$mq-pc: 1200px;
+$mq-tablet: 960px;
+$mq-movil: 768px;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}

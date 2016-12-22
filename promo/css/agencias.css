@@ -1,0 +1,459 @@
+@charset "UTF-8";
+/*Lacueva.tv - promos - agencias*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a, a:hover {
+  color: inherit;
+  text-decoration: none; }
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+/*para ocultar texto y que lo lean los lectores de no videntes*/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0; }
+
+/*Familia Fuentes*/
+/*tamaños fuentes*/
+/*weight de las fuentes*/
+/*colores*/
+/*mediaqueries*/
+/*loader*/
+.loader {
+  position: absolute;
+  height: 112%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ececec;
+  color: #333;
+  z-index: 111; }
+  .loader p {
+    font-size: 24px; }
+
+/* estilo general*/
+html, body {
+  background-color: #ffffff;
+  color: #333;
+  font-family: "Raleway", "Verdana", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  height: 100%;
+  letter-spacing: 1px;
+  position: relative; }
+
+.wrapper {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 10px; }
+  @media (max-width: 960px) {
+    .wrapper {
+      padding: 0 50px; } }
+
+/*------ cabecera -------*/
+header {
+  clear: both;
+  overflow: auto;
+  color: #333;
+  padding: 80px 0; }
+  header h1 {
+    font-size: 225%;
+    font-weight: 300;
+    line-height: 130%;
+    margin-bottom: 50px; }
+  header ul {
+    font-size: 110%;
+    margin-bottom: 50px; }
+    header ul li:before {
+      content: "-";
+      margin-right: 10px; }
+    @media (max-width: 960px) {
+      header ul {
+        width: 60%; } }
+    @media (max-width: 768px) {
+      header ul {
+        width: 100%; } }
+
+.img-header {
+  width: 50%;
+  float: right; }
+  .img-header img {
+    width: 80%;
+    margin: 0 auto;
+    display: block; }
+  @media (max-width: 960px) {
+    .img-header {
+      position: absolute;
+      right: 0; } }
+  @media (max-width: 768px) {
+    .img-header {
+      display: none;
+      z-index: 1; } }
+
+.texto-header {
+  width: 50%;
+  float: left; }
+  @media (max-width: 960px) {
+    .texto-header {
+      float: none;
+      width: 100%;
+      position: relative;
+      z-index: 11; } }
+
+.inline-decore span {
+  color: #ffffff;
+  background-color: #333; }
+
+/*------ parrafo descripcion-------*/
+.main {
+  clear: both;
+  overflow: auto;
+  position: relative; }
+  @media (max-width: 960px) {
+    .main {
+      overflow: visible; } }
+
+.img-fondo-verde {
+  float: left;
+  width: 50%;
+  background-color: #ffffff; }
+  .img-fondo-verde img {
+    width: 80%;
+    display: block;
+    margin: 0 auto; }
+  @media (max-width: 960px) {
+    .img-fondo-verde {
+      float: none;
+      width: 100%;
+      margin: 50px auto; } }
+
+.texto-descriptivo {
+  float: left;
+  width: 50%; }
+  .texto-descriptivo p {
+    margin: 15px 0; }
+    .texto-descriptivo p em {
+      font-style: italic; }
+  .texto-descriptivo h5 {
+    font-weight: 600; }
+  @media (max-width: 960px) {
+    .texto-descriptivo {
+      float: none;
+      width: 100%; } }
+
+/*------ lacueva.tv-------*/
+.lacueva-text {
+  clear: both; }
+  .lacueva-text p {
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 50px 0; }
+
+/*------ contacto y presupuesto -------*/
+#contacto {
+  padding: 50px 50px;
+  max-width: 1024px;
+  margin: 0 auto;
+  clear: both;
+  overflow: auto;
+  position: relative; }
+  @media (max-width: 960px) {
+    #contacto {
+      padding: 50px 20px; } }
+  #contacto h2 {
+    font-size: 225%;
+    font-weight: 300;
+    line-height: 130%;
+    margin-bottom: 50px;
+    text-align: center; }
+  #contacto p {
+    font-size: 90%;
+    text-align: center; }
+
+.row {
+  clear: both;
+  width: 100%;
+  overflow: auto;
+  padding: 25px 40px; }
+
+.row-in {
+  clear: both;
+  width: 100%;
+  padding: 10px 0; }
+
+.col-l {
+  width: 50%;
+  float: left; }
+  @media (max-width: 960px) {
+    .col-l {
+      float: none;
+      width: 100%; } }
+
+.col-r {
+  width: 50%;
+  float: left; }
+  @media (max-width: 960px) {
+    .col-r {
+      float: none;
+      width: 100%; } }
+
+.col-l-in {
+  width: 50%;
+  float: left; }
+  @media (max-width: 960px) {
+    .col-l-in {
+      width: 90%; } }
+
+.col-r-in {
+  width: 50%;
+  float: left; }
+  @media (max-width: 960px) {
+    .col-r-in {
+      width: 10%; } }
+
+.adorno-valija {
+  background: url(../images/agencias-valija.png) no-repeat;
+  background-size: 100% 100%;
+  width: 217px;
+  height: 194px;
+  position: absolute;
+  bottom: 4%;
+  right: 5%; }
+  @media (max-width: 960px) {
+    .adorno-valija {
+      display: none; } }
+
+/*formulario en sí*/
+form {
+  margin: 30px 0; }
+  form h3 {
+    font-weight: 300;
+    font-size: 155%;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    line-height: 150%; }
+  form label {
+    width: 95%;
+    margin: 10px auto;
+    display: inline-block; }
+  form input {
+    width: 95%;
+    margin: 0 auto;
+    display: inline-block;
+    border: none;
+    border-bottom: 1px solid #333;
+    height: 35px;
+    padding: 2px 5px; }
+  form textarea {
+    width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+    height: 145px;
+    padding: 2px 5px; }
+  form input[type=checkbox], form input[type=radio] {
+    height: initial;
+    width: 50px; }
+  form button {
+    border: none;
+    margin-top: 50px; }
+  form input[type=checkbox] {
+    display: none; }
+  form input[type=checkbox] + label span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url(../images/sprite-promos.png) no-repeat;
+    background-position: -213px -51px; }
+  form input[type=checkbox]:checked + label span {
+    background-position: -264px -51px; }
+  form input[type=radio] {
+    display: none; }
+  form input[type=radio] + label span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url(../images/sprite-promos.png) no-repeat;
+    background-position: -213px -51px; }
+  form input[type=radio]:checked + label span {
+    background-position: -264px -51px; }
+
+/*------ footer -------*/
+footer {
+  margin-top: 50px;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 15px 0; }
+  footer h6 {
+    display: inline-block;
+    margin-top: 17px; }
+    @media (max-width: 768px) {
+      footer h6 {
+        display: none; } }
+  @media (max-width: 960px) {
+    footer {
+      padding: 25px 100px; } }
+  @media (max-width: 768px) {
+    footer {
+      padding: 25px 50px; } }
+
+/*redes*/
+.redes {
+  float: right;
+  margin: 1%; }
+  .redes li {
+    display: inline-block;
+    margin-right: 20px; }
+
+.red-icon {
+  background: url(../images/sprite_minimal.png);
+  display: inline-block;
+  width: 25px;
+  height: 23px; }
+  .red-icon:hover {
+    opacity: 0.2; }
+
+.red-icon-contacto {
+  background-position: -18px -13px;
+  vertical-align: middle; }
+
+.red-icon-email {
+  background-position: -18px -13px; }
+
+.red-icon-face {
+  background-position: -65px -11px; }
+
+.red-icon-plus {
+  background-position: -113px -11px; }
+
+.red-icon-linkedin {
+  background-position: -165px -11px; }
+
+.red-icon-github {
+  background-position: -211px -11px; }
+
+.red-icon-pinterest {
+  background-position: -258px -11px; }
+
+/*copyright*/
+.copyright {
+  font-size: 70%;
+  clear: both; }
+
+.copy-right {
+  text-align: right; }
+
+/* redes negros*/
+.redes-left {
+  float: left;
+  margin: 5% 1%; }
+  .redes-left li {
+    display: inline-block;
+    margin-right: 10px; }
+
+.red-icon-negro {
+  background: url(../images/sprite-promos.png);
+  display: inline-block;
+  width: 30px;
+  height: 20px; }
+  .red-icon-negro:hover {
+    opacity: 0.2; }
+
+.red-icon-negro-email {
+  background-position: -16px -66px; }
+
+.red-icon-negro-face {
+  background-position: -51px -66px; }
+
+.red-icon-negro-plus {
+  background-position: -84px -66px; }
+
+.red-icon-negro-linkedin {
+  background-position: -117px -66px; }
+
+.red-icon-negro-pinterest {
+  background-position: -159px -66px; }
+
+/*botones*/
+.btn-wrapper {
+  width: 270px; }
+
+.btn {
+  cursor: pointer; }
+  .btn:hover {
+    opacity: 0.7; }
+
+.btn-transparente {
+  background-color: rgba(26, 26, 26, 0.8);
+  padding: 15px 25px; }
+
+.btn-negro-csombra {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  display: block;
+  width: 100%;
+  height: 60px;
+  font-size: 150%;
+  padding: 18px 25px;
+  text-align: center;
+  box-shadow: 0px 0px 4px #1a1a1a; }
+  @media (max-width: 960px) {
+    .btn-negro-csombra {
+      padding: 15px 25px; } }
+
+/*# sourceMappingURL=agencias.css.map */

@@ -1,0 +1,181 @@
+/*Lacueva.tv - promos - desarrollo*/
+@import 'reset';
+@import 'variables';
+
+/* estilo general*/
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: $negro;
+    color: $blanco;
+    font-family: $letra-minimal;
+    font-size: $fs-normal;
+    line-height: $lh-normal;
+    overflow:hidden;
+    
+    @media (max-width: $mq-tablet) {
+       overflow:auto;
+    }
+
+    @media (max-width: $mq-movil) {
+       font-size: $fs-movil;
+    }
+}
+
+/*loader*/
+@import 'loader';
+
+/* ----- contenido ------ */
+
+//fondo con imagen olu
+.background {
+    height: 100%;
+    background: $gris-claro url(../images/olu_eletu1440.jpg) no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    background-attachment: fixed;
+    padding-top: 4%;
+
+    @media (max-width: $mq-tablet) {
+        height: auto;
+        padding-top: 0;
+    }
+
+    @media (min-width: $mq-bpc) {
+        padding-top: 7%;
+    }
+}
+
+//transparencia con contenido
+.wrapper {
+    width: 70%;
+    margin: 0 auto;
+    padding: 2% 5%;
+    background-color: $negro-transparente;
+    overflow: auto;
+
+    @media (max-width: $mq-tablet) {
+        width: 100%;
+        padding: 6% 90px;
+    }
+
+    @media (max-width: $mq-movil) {
+        padding: 6% 40px;   
+    }
+
+    @media (min-width: $mq-bpc) {
+        width: 80%;
+        padding: 5% 7%;
+    }
+}
+
+.wrapper-btn {
+    width: 70%;
+    margin: 0 auto;
+    padding: 3% 0;
+    font-size: 170%;
+    text-align: right;
+
+    @media (max-width: $mq-tablet) {
+        display: none;
+    }
+
+    @media (min-width: $mq-bpc) {
+        width: 80%;
+    }
+}
+
+/*botones*/
+@import 'btn';
+
+header {
+    h1 {
+        font-size: 180%;
+        margin-bottom: 40px;
+        font-weight: $semibold;
+        letter-spacing: 1px;
+        line-height: 150%;
+
+        em {
+            font-style: italic;
+        }
+        
+        @media (max-width: $mq-tablet) {
+            margin: 40px auto;
+            text-align: center;
+        }
+
+    }
+
+    h2 {
+        font-size: 140%;
+        margin-bottom: 40px;
+        line-height: 140%;
+    }
+}
+
+.col-l {
+    width: 50%;
+    float: left;
+
+    @media (max-width: $mq-movil) {
+        float: none;
+        height: auto;
+        width: 100%;
+        margin-bottom: 50px;     
+    }
+}
+
+.col-r {
+    width: 50%;
+    float: right;
+
+    @media (max-width: $mq-movil) {
+        float: none;
+        height: auto;
+        width: 100%;     
+    }
+}
+
+.caracteristicas {
+    border-left: $blanco 1px solid;
+    padding-left: 20px;
+    li {
+        margin: 15px 0;
+        font-style: italic;
+    }
+    @media (max-width: $mq-tablet) {
+        font-size: 120%;
+    }
+}
+
+.textos {
+    p {
+        font-size: 90%;
+        margin: 20px 0;
+        line-height: 150%;
+        strong {
+            font-weight: $semibold;
+            font-style: italic;
+        }
+
+        em {
+            font-style: italic;
+        }
+    }
+
+    a {
+        font-size: 180%;
+        cursor: pointer;
+
+        &:hover {
+            font-style: italic;
+        }
+    }
+}
+
+/*formulario de contacto*/
+@import 'form-style';
+
+/*importar footer*/
+@import 'footer';
