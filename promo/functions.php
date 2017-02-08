@@ -54,6 +54,8 @@ function RalewayFont ( $url ) {
 
   switch ( $url ) {
   	case 'desarrollo':
+      $linkfont .= $RLight;
+      $linkfont .= ','; 
   		$linkfont .= $RNormal;
   		$linkfont .= ','; 
       $linkfont .= $Rbold;
@@ -80,11 +82,11 @@ function RalewayFont ( $url ) {
 
 //define el css a incluir
 function inluirCss ( $url ) {
-	$cssPagina = 'css/style.css';
+	$cssPagina = 'css/desarrollo.css';
 
 	switch ( $url ) {
   	case 'desarrollo':
-  		$cssPagina = 'css/style.css';
+  		$cssPagina = 'css/desarrollo.css';
   		break;
   	case 'hoteles' :
   		$cssPagina = 'css/hoteles.css';

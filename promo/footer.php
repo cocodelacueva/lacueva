@@ -7,9 +7,6 @@
 	<script src="js/jquery.min.js"></script>
     <script src="js/lacueva.js"></script>
 <!-- Google Code para etiquetas de remarketing -->
-<!--------------------------------------------------
-Es posible que las etiquetas de remarketing todavía no estén asociadas a la información de identificación personal o que estén en páginas relacionadas con las categorías delicadas. Para obtener más información e instrucciones sobre cómo configurar la etiqueta, consulte http://google.com/ads/remarketingsetup.
---------------------------------------------------->
 <script type="text/javascript">
 /* <![CDATA[ */
 var google_conversion_id = 864840080;
@@ -24,6 +21,5 @@ var google_remarketing_only = true;
 <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/864840080/?guid=ON&amp;script=0"/>
 </div>
 </noscript>
-
 </body>
 </html>
