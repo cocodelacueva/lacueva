@@ -1,5 +1,13 @@
 # LaCueva.tv
 
+# VERSION 2.0
+* Tema nuevo (divi)
+* Landing page inicial con trabajos y contacto
+* Pagina de mini promo sitio
+
+
+--------------
+
 Versión 1.1: Cambios en la promo de desarrollo, en el ftp online quedo la desarrollo vieja, functions vieja y js vieja.
 
 Versión 1.0: Web general y landing pages  

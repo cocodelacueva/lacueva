@@ -1,0 +1,56 @@
+/*
+ Theme Name:     Divi Child Theme
+ Theme URI:      http://www.elegantthemes.com/gallery/divi/
+ Description:    Divi Child Theme
+ Author:         LaCueva.tv
+ Author URI:     http://lacueva.tv
+ Template:       Divi
+ Version:        1.0.0
+*/
+ 
+@import url("../Divi/style.css");
+@charset "utf-8";
+
+#info-afip-lqva {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 50px;
+    right: 10%;
+}
+
+@media (max-width: 980px) {
+   #info-afip-lqva{right: 0;}
+}
+
+#formulario-minisitio label {
+width: 100%;
+display: block;
+}
+#formulario-minisitio input {
+    width: 100%;
+    height:40px;
+}
+
+#formulario-minisitio input[type=checkbox] {
+height: 20px;
+}
+
+#formulario-minisitio input[type=submit] {
+    background: #a02c2c;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 18px;
+    cursor:pointer;
+    margin-top: 20px;
+}
+
+#formulario-minisitio textarea {
+    width: 100%;
+}
+
+.et_pb_blog_grid .et_pb_image_container {
+    padding:20px;
+}
